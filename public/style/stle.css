@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: IRsans;
+  list-style: none;
 }
 
 body {
@@ -31,7 +32,7 @@ header {
   box-shadow: 0 2px 7px 1px #ded;
   width: 100%;
   height: 65px;
-  z-index: 1;
+  z-index: 99;
   margin-bottom: 300px;
 }
 
@@ -59,6 +60,7 @@ header .contentheader .items button {
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.2s ease;
+  display: none;
 }
 header .contentheader .items button:hover {
   background-color: #ddd;
@@ -93,10 +95,10 @@ header .contentheader .search form input {
   border-radius: 30px;
   outline: none;
   padding: 6px 15px 6px 0;
-  background-color: #dfefff;
+  background-color: #f0f0f0;
   border: none;
   font-size: 20px;
-  color: #999;
+  color: #959595;
 }
 header .contentheader .search form input::-webkit-input-placeholder {
   /* Edge */
@@ -160,9 +162,9 @@ header .contentheader .login .btnform img{
 
 
 header .contentheader .login a {
-  padding: 3px 14px 7px;
+  padding: 3px 15px 4px;
   text-decoration: none;
-  background-color: #ddd;
+  background-color: #e0e0e0;
   color: #556;
   border-radius: 25px;
   font-size: 16px;
@@ -172,101 +174,19 @@ header .contentheader .login a {
 header .contentheader .login a img {
   width: 20px;
   margin-bottom: -7px;
-  margin-right: 8px;
+  margin-right:10px;
 }
-
-/* /////////////////////////////////////////////////////////////////////////////// */
-
-
-
-.homecontainer{
-  width: 90%;
-  margin: 100px auto 0;
-}
-
-.homecontainer .slids{
-  width: 100%;
-  height: 250px;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: o;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0px;
-  gap: 12px;
-}
-
-.homecontainer .slids::-webkit-scrollbar {
-  width: 10px;
-}
-
-.homecontainer .slids div{
-  flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  scroll-snap-align: start;
-}
-
-.homecontainer .slids div img{
-  width: 100%;
-  height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container{
-  display: flex;
-}
-
-
-
-/* //////////////////////////////////////////////////////////////////////// */
-
-.aboutcontent {
-  width: 60%;
-  background-color: #fff;
-  padding: 15px 20px;
-  margin: 105px auto 40px;
-  line-height: 2.5;
-  border-radius: 5px;
-}
-
-.aboutcontent h3 {
-  font-size: 28px;
-}
-
-.aboutcontent p {
-  font-size: 18px;
-}
-
 
 
 
 /* /////////////////////////////////////////////////////////////// */
+
+
+.homandlist{
+  display: flex;
+}
+
+
 
 
 .backlist{
@@ -274,7 +194,7 @@ header .contentheader .login a img {
   z-index: 5;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 100%;
   bottom: 0;
   right: 0;
   overflow-x: hidden;
@@ -291,22 +211,21 @@ header .contentheader .login a img {
 .lists{
   width: 230px;
   position: fixed;
-  top: 0px;
-  height: 100vh;
-  border-radius: 10px 0 0 0 ;
-  overflow: auto;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
   background-color: #fff;
-  z-index: 99;
+  z-index: 8;
   animation-name: comlist;
   animation-duration: .6s;
 }
 
 .lists::-webkit-scrollbar {
-  width: 9px;
-  margin-right: 1px;
+  width: 0px;
 }
 
-.lists::-webkit-scrollbar-track {
+/*.lists::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 10px;
 }
@@ -315,7 +234,7 @@ header .contentheader .login a img {
   background-color: #ff9928;
   width: 100%;
   border-radius: 10px;
-}
+} */
 
 @keyframes comlist {
   from {right: -240px;}
@@ -381,6 +300,660 @@ header .contentheader .login a img {
   padding-bottom: 30px;
 }
 
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.homecontainer{
+  width: 75%;
+  position: relative;
+  left: -120px;
+  margin: 80px auto 0;
+}
+
+.homecontainer .slids{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0px;
+  gap: 12px;
+}
+
+.homecontainer .slids::-webkit-scrollbar {
+  width: 10px;
+}
+
+.homecontainer .slids div{
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  scroll-snap-align: start;
+  border-radius: 7px;
+}
+
+.homecontainer .slids div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+.homecontainer .papular{
+  width: 100%;
+}
+
+.homecontainer .papular .papulartitle{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.homecontainer .papular .papulartitle h3{
+  width: 100%;
+  color: #374151;
+  font-size: 23px;
+}
+
+.homecontainer .papular .papulartitle div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homecontainer .papular .papulartitle div p{
+  color: #b3868e;
+  font-size: 16px;
+}
+
+.homecontainer .papular .papulartitle div a{
+  color: #1976d2;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.homecontainer .papular .papularslids{
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* .homecontainer .papular .papularslids{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0px;
+  gap: 12px;
+} */
+
+/* .homecontainer .papular .papularslids::-webkit-scrollbar {
+  width: 10px;
+} */
+
+.homecontainer .papular .child{
+  min-width: 19%;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  margin: 0 15px;
+  border-radius: 15px;
+  background-color: #FFF;
+}
+
+/* .homecontainer .papular .papularslids .child{
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  scroll-snap-align: start;
+  border-radius: 7px;
+} */
+
+.homecontainer .papular .child a{
+  text-decoration: none;
+  width: 100%;
+}
+.homecontainer .papular .child a img{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.homecontainer .papular .child a .middle{
+  padding: 0 5px;
+}
+
+.homecontainer .papular .child a .middle p {
+  color: #6f7583;
+  font-size: 18px;
+  font-weight: 590;
+  padding: 0 7px;
+}
+
+.homecontainer .papular .child a .middle .locationgyminfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  margin: 7px 0;
+}
+
+.homecontainer .papular .child a .middle .locationgyminfo span{
+  color: #6f7583;
+}
+
+.homecontainer .papular .child a .middle .locationgyminfo span img{
+  width: 16px;
+  margin-bottom: -3px;
+}
+
+.homecontainer .papular .child a .middle .locationgyminfo .locationgym img{
+  width: 12px;
+  margin-left: 3px;
+}
+
+.homecontainer .papular .child a .middle ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.homecontainer .papular .child a .middle ul li img{
+  width: 14px;
+  margin-bottom: -4px;
+}
+
+.homecontainer .papular .child a .middle ul li{
+  color: #a0a5ae;
+  font-size: 12px;
+}
+
+.homecontainer .papular .child a .reserved{
+  width: 94%;
+  margin: 10px auto 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 9px;
+  color: #7b939e;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+.homecontainer .imglink{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+
+.homecontainer .imglink a{
+  width: 47.5%;
+}
+
+.homecontainer .imglink a img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 1px #ccc;
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+.homecontainer .seen{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.homecontainer .seen .seentitle{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.homecontainer .seen .seentitle h3{
+  width: 100%;
+  color: #374151;
+  font-size: 23px;
+}
+
+.homecontainer .seen .seentitle div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homecontainer .seen .seentitle div p{
+  color: #b3868e;
+  font-size: 16px;
+}
+
+.homecontainer .seen .seentitle div a{
+  color: #1976d2;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.homecontainer .seen .seenslids{
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.homecontainer .seen .child{
+  min-width: 19%;
+  max-height: 300px;
+  margin: 0 15px;
+  border-radius: 15px;
+  background-color: #FFF;
+}
+
+.homecontainer .seen .child a{
+  text-decoration: none;
+  width: 100%;
+}
+.homecontainer .seen .child a img{
+  width: 100%;
+  height: 50%;
+  border-radius: 15px 15px 0 0;
+}
+
+.homecontainer .seen .child a .middle{
+  padding: 0 5px;
+}
+
+.homecontainer .seen .child a .middle p {
+  color: #6f7583;
+  font-size: 18px;
+  font-weight: 590;
+  padding: 0 7px;
+}
+
+.homecontainer .seen .child a .middle .locationgyminfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  margin: 7px 0;
+}
+
+.homecontainer .seen .child a .middle .locationgyminfo span{
+  color: #6f7583;
+}
+
+.homecontainer .seen .child a .middle .locationgyminfo span img{
+  width: 16px;
+  margin-bottom: -3px;
+}
+
+.homecontainer .seen .child a .middle .locationgyminfo .locationgym img{
+  width: 12px;
+  margin-left: 3px;
+}
+
+.homecontainer .seen .child a .middle ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.homecontainer .seen .child a .middle ul li img{
+  width: 14px;
+  height: 14px;
+  margin-bottom: -4px;
+}
+
+.homecontainer .seen .child a .middle ul li{
+  color: #a0a5ae;
+  font-size: 12px;
+}
+
+.homecontainer .seen .child a .reserved{
+  width: 94%;
+  margin: 10px auto 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 9px;
+  color: #7b939e;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+.homecontainer .pool{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.homecontainer .pool .pooltitle{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.homecontainer .pool .pooltitle h3{
+  width: 100%;
+  color: #374151;
+  font-size: 23px;
+}
+
+.homecontainer .pool .pooltitle div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homecontainer .pool .pooltitle div p{
+  color: #b3868e;
+  font-size: 16px;
+}
+
+
+.homecontainer .pool .poolslids{
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.homecontainer .pool .poolslids div a{
+  color: #1976d2;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.homecontainer .pool .child{
+  min-width: 19%;
+  min-height: 300px;
+  margin: 0 15px;
+  border-radius: 15px;
+  background-color: #FFF;
+}
+
+.homecontainer .pool .child a{
+  text-decoration: none;
+  width: 100%;
+}
+.homecontainer .pool .child a img{
+  width: 100%;
+  height: 50%;
+  border-radius: 15px 15px 0 0;
+}
+
+.homecontainer .pool .child a .middle{
+  padding: 0 5px;
+}
+
+.homecontainer .pool .child a .middle p {
+  color: #6f7583;
+  font-size: 18px;
+  font-weight: 590;
+  padding: 0 7px;
+}
+
+.homecontainer .pool .child a .middle .locationgyminfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  margin: 7px 0;
+}
+
+.homecontainer .pool .child a .middle .locationgyminfo span{
+  color: #6f7583;
+}
+
+.homecontainer .pool .child a .middle .locationgyminfo span img{
+  width: 16px;
+  margin-bottom: -3px;
+}
+
+.homecontainer .pool .child a .middle .locationgyminfo .locationgym img{
+  width: 12px;
+  margin-left: 3px;
+}
+
+.homecontainer .pool .child a .middle ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.homecontainer .pool .child a .middle ul li img{
+  width: 14px;
+  margin-bottom: -4px;
+}
+
+.homecontainer .pool .child a .middle ul li{
+  color: #a0a5ae;
+  font-size: 12px;
+}
+
+.homecontainer .pool .child a .reserved{
+  width: 94%;
+  margin: 10px auto 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 9px;
+  color: #7b939e;
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+
+.homecontainer .getapp {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: #4b5563;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.homecontainer .getapp h3{
+  font-size: 30px;
+  color: #fff;
+  width: 47%;
+  background-color: greenyellow;
+}
+
+.homecontainer .getapp h3 img{
+  width: 40px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
+.homecontainer .getapp div{
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  background-color: orange;
+}
+
+.homecontainer .getapp div a{
+  background-color: #FFF;
+  padding: 8px 0;
+  min-width: 140px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+
+.homecontainer .football{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.homecontainer .football .footballtitle{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.homecontainer .football .pooltfootballtitleitle h3{
+  width: 100%;
+  color: #374151;
+  font-size: 23px;
+}
+
+.homecontainer .football .footballtitle div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homecontainer .football .footballtitle div p{
+  color: #b3868e;
+  font-size: 16px;
+}
+
+
+.homecontainer .football .footballslids{
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.homecontainer .football .footballslids div a{
+  color: #1976d2;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.homecontainer .football .child{
+  min-width: 19%;
+  min-height: 300px;
+  margin: 0 15px;
+  border-radius: 15px;
+  background-color: #FFF;
+}
+
+.homecontainer .football .child a{
+  text-decoration: none;
+  width: 100%;
+}
+.homecontainer .football .child a img{
+  width: 100%;
+  height: 50%;
+  border-radius: 15px 15px 0 0;
+}
+
+.homecontainer .football .child a .middle{
+  padding: 0 5px;
+}
+
+.homecontainer .football .child a .middle p {
+  color: #6f7583;
+  font-size: 18px;
+  font-weight: 590;
+  padding: 0 7px;
+}
+
+.homecontainer .football .child a .middle .locationgyminfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  margin: 7px 0;
+}
+
+.homecontainer .football .child a .middle .locationgyminfo span{
+  color: #6f7583;
+}
+
+.homecontainer .football .child a .middle .locationgyminfo span img{
+  width: 16px;
+  margin-bottom: -3px;
+}
+
+.homecontainer .football .child a .middle .locationgyminfo .locationgym img{
+  width: 12px;
+  margin-left: 3px;
+}
+
+.homecontainer .football .child a .middle ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.homecontainer .football .child a .middle ul li img{
+  width: 14px;
+  margin-bottom: -4px;
+}
+
+.homecontainer .football .child a .middle ul li{
+  color: #a0a5ae;
+  font-size: 12px;
+}
+
+.homecontainer .football .child a .reserved{
+  width: 94%;
+  margin: 10px auto 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 9px;
+  color: #7b939e;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.aboutcontent {
+  width: 60%;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin: 105px auto 40px;
+  line-height: 2.5;
+  border-radius: 5px;
+}
+
+.aboutcontent h3 {
+  font-size: 28px;
+}
+
+.aboutcontent p {
+  font-size: 18px;
+}
 
 
 
