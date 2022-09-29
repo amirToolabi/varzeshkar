@@ -351,6 +351,7 @@ header .contentheader .login a img {
 
 .homecontainer .papular{
   width: 100%;
+  margin-top: 40px;
 }
 
 .homecontainer .papular .papulartitle{
@@ -380,47 +381,20 @@ header .contentheader .login a img {
   text-decoration: none;
 }
 
-.homecontainer .papular .papularslids{
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
 /* .homecontainer .papular .papularslids{
   width: 100%;
-  height: 250px;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0px;
-  gap: 12px;
-} */
-
-/* .homecontainer .papular .papularslids::-webkit-scrollbar {
-  width: 10px;
 } */
 
 .homecontainer .papular .child{
   min-width: 19%;
-  display: flex;
-  flex-direction: column;
   min-height: 300px;
   margin: 0 15px;
   border-radius: 15px;
   background-color: #FFF;
 }
-
-/* .homecontainer .papular .papularslids .child{
-  flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  scroll-snap-align: start;
-  border-radius: 7px;
-} */
 
 .homecontainer .papular .child a{
   text-decoration: none;
@@ -428,6 +402,7 @@ header .contentheader .login a img {
 }
 .homecontainer .papular .child a img{
   width: 100%;
+  height: 50%;
   border-radius: 15px 15px 0 0;
 }
 
@@ -453,15 +428,20 @@ header .contentheader .login a img {
   color: #6f7583;
 }
 
+.homecontainer .papular .child a .middle .locationgyminfo .locationgym img{
+  width: 12px;
+  height: 13px;
+  margin-bottom: -4px;
+  margin-left: 3px;
+}
+
 .homecontainer .papular .child a .middle .locationgyminfo span img{
   width: 16px;
+  height: 16px;
+  margin: 0 2px;
   margin-bottom: -3px;
 }
 
-.homecontainer .papular .child a .middle .locationgyminfo .locationgym img{
-  width: 12px;
-  margin-left: 3px;
-}
 
 .homecontainer .papular .child a .middle ul{
   display: flex;
@@ -472,6 +452,7 @@ header .contentheader .login a img {
 
 .homecontainer .papular .child a .middle ul li img{
   width: 14px;
+  height: 14px;
   margin-bottom: -4px;
 }
 
@@ -488,6 +469,7 @@ header .contentheader .login a img {
   padding-top: 9px;
   color: #7b939e;
 }
+
 
 
 
@@ -605,11 +587,13 @@ header .contentheader .login a img {
 
 .homecontainer .seen .child a .middle .locationgyminfo span img{
   width: 16px;
+  height: 16px;
   margin-bottom: -3px;
 }
 
 .homecontainer .seen .child a .middle .locationgyminfo .locationgym img{
   width: 12px;
+  height: 13px;
   margin-left: 3px;
 }
 
@@ -730,11 +714,13 @@ header .contentheader .login a img {
 
 .homecontainer .pool .child a .middle .locationgyminfo span img{
   width: 16px;
+  height: 16px;
   margin-bottom: -3px;
 }
 
 .homecontainer .pool .child a .middle .locationgyminfo .locationgym img{
   width: 12px;
+  height: 13px;
   margin-left: 3px;
 }
 
@@ -747,6 +733,7 @@ header .contentheader .login a img {
 
 .homecontainer .pool .child a .middle ul li img{
   width: 14px;
+  height: 14px;
   margin-bottom: -4px;
 }
 
@@ -787,7 +774,6 @@ header .contentheader .login a img {
   font-size: 30px;
   color: #fff;
   width: 47%;
-  background-color: greenyellow;
 }
 
 .homecontainer .getapp h3 img{
@@ -800,7 +786,6 @@ header .contentheader .login a img {
   display: flex;
   justify-content: end;
   width: 50%;
-  background-color: orange;
 }
 
 .homecontainer .getapp div a{
@@ -902,11 +887,13 @@ header .contentheader .login a img {
 
 .homecontainer .football .child a .middle .locationgyminfo span img{
   width: 16px;
+  height: 16px;
   margin-bottom: -3px;
 }
 
 .homecontainer .football .child a .middle .locationgyminfo .locationgym img{
   width: 12px;
+  height: 13px;
   margin-left: 3px;
 }
 
@@ -919,6 +906,7 @@ header .contentheader .login a img {
 
 .homecontainer .football .child a .middle ul li img{
   width: 14px;
+  height: 14px;
   margin-bottom: -4px;
 }
 
@@ -938,7 +926,7 @@ header .contentheader .login a img {
 
 /* //////////////////////////////////////////////////////////////////////// */
 
-.aboutcontent {
+/* .aboutcontent {
   width: 60%;
   background-color: #fff;
   padding: 15px 20px;
@@ -953,7 +941,7 @@ header .contentheader .login a img {
 
 .aboutcontent p {
   font-size: 18px;
-}
+} */
 
 
 
@@ -1007,29 +995,321 @@ footer .risbuttons {
   left: 0;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  background-color: #ded;
+  height: 67px;
+  background-color: #efefef;
   display: none;
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 -1px 3px 3px #eee;
 }
 
-footer .risbuttons a {
-  margin: 0 15px;
-}
 footer .risbuttons a img {
   width: 20px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1100px) {
-  .aboutcontent {
+@media screen and (max-width: 1230px){
+
+  .homecontainer .papular .child{
+    min-width: 23%;
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 1020px){
+
+  header .contentheader .items button {
+    display: block;
+  }
+
+  .lists{
+    display: none;
+  }  
+
+  .homecontainer{
     width: 90%;
+    left: -0px;
+    margin: 80px auto 0;
   }
 
-  footer .risbuttons {
-    display: flex;
+  .homecontainer .papular .child{
+    min-width: 22%;
+    min-height: 300px;
+  }
+  .homecontainer .seen .child{
+    min-width: 22%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 22%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 22%;
+    min-height: 300px;
   }
 
+}
+
+@media screen and (max-width: 890px){
+
+  .homecontainer .papular .child{
+    min-width: 25%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 25%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 25%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 25%;
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 785px){
+
+  .homecontainer .papular .child{
+    min-width: 33%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 33%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 33%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 33%;
+    min-height: 300px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 750px){
+
+  .homecontainer .getapp{
+    flex-direction: column;
+  }
+
+  .homecontainer .getapp h3{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .homecontainer .getapp div{
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+  .homecontainer .papular .child{
+    min-width: 38%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 38%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 38%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 38%;
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .homecontainer .papular .child{
+    min-width: 40%;
+    min-height: 300px;
+  }
+
+  .homecontainer .imglink{
+    flex-direction: column;
+  }
+  
+  .homecontainer .imglink a{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .homecontainer .imglink a img{
+    border-radius: 15px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 40%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 40%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 40%;
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  .homecontainer .papular .child{
+    min-width: 46%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 46%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 46%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 46%;
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 420px){
+
+  .homecontainer .papular .child{
+    min-width: 60%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .child{
+    min-width: 60%;
+    min-height: 300px;
+  }
+  .homecontainer .pool .child{
+    min-width: 60%;
+    min-height: 300px;
+  }
+  .homecontainer .football .child{
+    min-width: 60%;
+    min-height: 300px;
+  }
+
+  .homecontainer .getapp h3{
+    font-size: 22px;
+  }
+  
+  .homecontainer .getapp h3 img{
+    width: 30px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+  }
+  
+  .homecontainer .getapp div a{
+    min-width: 130px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 325px){
+
+  .homecontainer .papular .papulartitle h3{
+    font-size: 20px;
+  }
+  .homecontainer .papular .papulartitle div p{
+    font-size: 14px;
+  }
+  .homecontainer .papular .papulartitle div a{
+    font-size: 12px;
+  }
+  .homecontainer .papular .child{
+    min-width: 70%;
+    min-height: 300px;
+  }
+
+  .homecontainer .seen .seentitle h3{
+    font-size: 20px;
+  }
+  .homecontainer .seen .seentitle div p{
+    font-size: 14px;
+  }
+
+  .homecontainer .seen .seentitle div a{
+    font-size: 12px;
+  }
+  .homecontainer .seen .child{
+    min-width: 70%;
+    min-height: 300px;
+  }
+
+  .homecontainer .pool .pooltitle h3{
+    font-size: 20px;
+  }
+  .homecontainer .pool .pooltitle div p{
+    font-size: 14px;
+  }
+
+  .homecontainer .pool .pooltitle div a{
+    font-size: 12px;
+  }
+  .homecontainer .pool .child{
+    min-width: 70%;
+    min-height: 300px;
+  }
+  
+  .homecontainer .football .footballtitle h3{
+    font-size: 20px;
+  }
+  .homecontainer .football .footballtitle div p{
+    font-size: 14px;
+  }
+
+  .homecontainer .football .footballtitle div a{
+    font-size: 12px;
+  }
+  .homecontainer .football .child{
+    min-width: 70%;
+    min-height: 300px;
+  }
+
+  .homecontainer .getapp div a{
+    min-width: 110px;
+    font-size: 13px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+  
   header .contentheader .items {
     width: 280px;
   }
@@ -1037,7 +1317,7 @@ footer .risbuttons a img {
   header .contentheader .search {
     width: 68%;
   }
-
+  
   header .contentheader .search form {
     width: 67%;
   }
@@ -1048,6 +1328,11 @@ footer .risbuttons a img {
     justify-content: end;
     align-items: center;
   }
+
+  footer .risbuttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 790px) {
@@ -1056,17 +1341,20 @@ footer .risbuttons a img {
     display: flex;
     align-items: center;
   }
-
+  
   header .contentheader .items button {
     font-size: 14px;
   }
-
+  
   header .contentheader .items a {
     display: none;
   }
-
+  
   header .contentheader .items .fav {
     display: block;
+  }
+  header .contentheader .items .fav img{
+    margin-bottom: -10px;
   }
 
   header .contentheader .search {
@@ -1109,7 +1397,7 @@ footer .risbuttons a img {
 
   header .contentheader .items .fav img {
     width: 33px;
-    margin-bottom: -3px;
+    margin-bottom: -10px;
   }
 
   header .contentheader .login {
@@ -1152,14 +1440,6 @@ footer .risbuttons a img {
   }
   .lists ul li a img{
     margin-bottom: -5px;
-  }
-
-  .aboutcontent h3 {
-    font-size: 28px;
-  }
-  
-  .aboutcontent p {
-    font-size: 18px;
   }
 
   footer p {
