@@ -1,17 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import Header from "./public components/Header"
-import Footer from "./public components/Footer"
-import Home from './home components/Home';
+import Header from "./public components/Header";
+import Footer from "./public components/Footer";
+import Home from "./home components/Home";
+import { useSelector } from "react-redux";
 
 const Allcomponent = () => {
-    return ( 
-        <>
-            <Header/>
-            <Home/>
-            <Footer/>
-        </>
-     );
-}
- 
+
+    const comelist = useSelector((state)=> state );
+
+  return (
+    <>
+      <div className={comelist? "allhome" : null}>
+        <Header />
+        <Home />
+        <Footer />
+      </div>
+    </>
+  );
+};
+
 export default Allcomponent;

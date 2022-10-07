@@ -1,7 +1,7 @@
 import React from "react";
 
-// import { useDispatch } from "react-redux";
-// import { ComlistAction } from "../REDUX/ComlistAction";
+import { useDispatch } from "react-redux";
+import { comelist } from "../../redux/actions/ListAction";
 
 
 
@@ -14,7 +14,7 @@ import user from "../../images/user.png"
 
 const Header = () => {
 
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
 
 
@@ -23,7 +23,7 @@ const Header = () => {
       <header>
         <div className="contentheader">
           <div className="items">
-            <button>
+            <button onClick = {()=> dispatch(comelist()) }>
               <img src={more} alt="" /> دسته بندی
             </button>
             <a href="#">

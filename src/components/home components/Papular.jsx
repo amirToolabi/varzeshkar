@@ -44,9 +44,9 @@ const Papular = () => {
 
 
   const params = {
-    className: "center",
       arrows: true,
-      centerPadding: "60px",
+      centerMode:false,
+      infinite: false,
       slidesToShow: 4.5,
       slidesToScroll: 1,
       rtl: true
