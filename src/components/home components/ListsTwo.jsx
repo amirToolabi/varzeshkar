@@ -24,7 +24,7 @@ const ListsTwo = () => {
 
   return (
     <>
-      <section className={comelist? "" : "backanim"} id="liststwo">
+      <section className={comelist? null : "golist"} id="liststwo">
         <div className="scrollist">
           <ul className="ul_game">
             <li>

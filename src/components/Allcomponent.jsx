@@ -11,7 +11,7 @@ const Allcomponent = () => {
 
   return (
     <>
-      <div className={comelist? "allhome" : null}>
+      <div className={comelist? "allhome" : undefined}>
         <Header />
         <Home />
         <Footer />
