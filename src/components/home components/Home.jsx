@@ -1,16 +1,12 @@
 import React from "react";
 
-import { useSelector } from "react-redux";
-
-import Seen from "../BaseComponent/Seen";
-import Pool from "../BaseComponent/Pool";
 
 import SlideShow from "./SlideShow";
 import Getapp from "./Getapp";
-import Football from "../BaseComponent/Football";
 import Shadow from "./Shadow";
 import SideMenu from "../BaseComponent/SideMenu";
-import ClubSliderSection from "../BaseComponent/ClubSliderSection";
+
+import { useSelector } from "react-redux";
 
 import one from "../../images/papular/1.jfif";
 import two from "../../images/papular/2.jfif";
@@ -59,17 +55,10 @@ import onePool from "../../images/pool/1.jfif";
 import location from "../../images/papular/location.png";
 import man from "../../images/papular/man.png";
 import woman from "../../images/papular/woman.png";
-// import share from "../../images/papular/share.png";
 import doted from "../../images/papular/doted.png";
+import ClubSlidersComponent from "../BaseComponent/ClubSlidersComponent";
 
 const Home = () => {
-
-const titles = [
-  {htitle : "محبوب ترین ها" , ptitle: "باشگاه های محبوب تایید شده توسط ورزشکار"},
-  {htitle : "محبوب ترین ها" , ptitle: "باشگاه های محبوب تایید شده توسط ورزشکار"},
-  {htitle : "محبوب ترین ها" , ptitle: "باشگاه های محبوب تایید شده توسط ورزشکار"},
-  {htitle : "محبوب ترین ها" , ptitle: "باشگاه های محبوب تایید شده توسط ورزشکار"},
-]
 
 const clubItems = [
   {img: one , title: 'باشگا پرشین غرب - بانوان' , address: 'تهران-منطقه  ۲۱' , location , woman , doted , listItemOne: "فیتنس" , listItemTwo: "تی آر ایکس" , listItemThree: "کراس فیت" , reserve : "رزرو آنلاین ندارد"},
@@ -176,11 +165,11 @@ return (
 
         <div className="homecontainer">
           <SlideShow />
-          <ClubSliderSection clubItems={clubItems} />
-          <Seen SeenClubItems={SeenClubItems} />
-          <Pool PoolClubItems={PoolClubItems} />
+          <ClubSlidersComponent clubItems={clubItems} title={"محبوب ترین ها"} subtitle={"باشگاه های محبوب تایید شده توسط ورزشکار"} />
+          <ClubSlidersComponent clubItems={SeenClubItems} title={"پربازدید ترین ها"} subtitle={"بر اساس تعداد بازدید های هفته اخیر"} />
+          <ClubSlidersComponent clubItems={PoolClubItems} title={"استخر ها"} subtitle={"استخر های روباز، جکوزی و سونا ..."} />
           <Getapp />
-          <Football FootballClubItems={FootballClubItems} />
+          <ClubSlidersComponent clubItems={FootballClubItems} title={"فوتبال و فوتسال"} subtitle={"رزرو سالن های فوتسال"} />
         </div>
       </div>
     </>

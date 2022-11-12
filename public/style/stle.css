@@ -484,6 +484,7 @@ section.golist{
 .homecontainer .papular{
   width: 100%;
   margin-top: 40px;
+  direction: rtl;
 }
 
 .homecontainer .papular .papulartitle{
@@ -515,34 +516,28 @@ section.golist{
 
 .homecontainer .papular .papularslids{
   width: 100%;
-  /* display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden; */
 }
 
-.homecontainer .papular .mySwiper{
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
+
 
 .homecontainer .papular .child{
-  /* min-width: 20%;
-  min-height: 300px;
-  margin: 0 15px; */
   border-radius: 15px;
   background-color: #FFF;
+  margin: 0 10px;
+  min-height: 330px;
+  direction: rtl;
 }
 
 .homecontainer .papular .child a{
   text-decoration: none;
   width: 100%;
+  height: 100%;
 }
-.homecontainer .papular .child a img{
+.homecontainer .papular .child a .imgslid{
   width: 100%;
-  height: 55%;
+  height: 170px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
 .homecontainer .papular .child a .middle{
@@ -622,7 +617,6 @@ section.golist{
 
 
 
-
 /* //////////////////////////////////////////////////////////////////////////// */
 
 
@@ -654,7 +648,7 @@ section.golist{
 
 
 
-
+/* 
 .homecontainer .seen{
   width: 100%;
   margin-top: 40px;
@@ -771,7 +765,7 @@ section.golist{
   text-align: center;
   padding-top: 9px;
   color: #7b939e;
-}
+} */
 
 
 
@@ -781,7 +775,7 @@ section.golist{
 
 
 
-.homecontainer .pool{
+/* .homecontainer .pool{
   width: 100%;
   margin-top: 40px;
 }
@@ -898,7 +892,7 @@ section.golist{
   text-align: center;
   padding-top: 9px;
   color: #7b939e;
-}
+} */
 
 
 
@@ -961,7 +955,7 @@ section.golist{
 
 
 
-.homecontainer .football{
+/* .homecontainer .football{
   width: 100%;
   margin-top: 40px;
 }
@@ -1078,7 +1072,7 @@ section.golist{
   text-align: center;
   padding-top: 9px;
   color: #7b939e;
-}
+} */
 
 /* //////////////////////////////////////////////////////////////////////// */
 
@@ -1166,12 +1160,12 @@ footer .risbuttons a img {
 
 @media screen and (max-width: 1230px){
 
-  .homecontainer .papular .child{
+  /* .homecontainer .papular .child{
     min-width: 23%;
     min-height: 300px;
   }
 
-}
+} */
 
 @media screen and (max-width: 1020px){
 
@@ -1193,7 +1187,7 @@ footer .risbuttons a img {
     margin: 80px auto 0;
   }
 
-  .homecontainer .papular .child{
+  /* .homecontainer .papular .child{
     min-width: 22%;
     min-height: 300px;
   }
@@ -1208,11 +1202,11 @@ footer .risbuttons a img {
   .homecontainer .football .child{
     min-width: 22%;
     min-height: 300px;
-  }
+  } */
 
 }
 
-@media screen and (max-width: 890px){
+/* @media screen and (max-width: 890px){
 
   .homecontainer .papular .child{
     min-width: 25%;
@@ -1232,9 +1226,9 @@ footer .risbuttons a img {
     min-height: 300px;
   }
 
-}
+} */
 
-@media screen and (max-width: 785px){
+/* @media screen and (max-width: 785px){
 
   .homecontainer .papular .child{
     min-width: 33%;
@@ -1254,7 +1248,7 @@ footer .risbuttons a img {
     min-height: 300px;
   }
 
-}
+} */
 
 
 
@@ -1281,7 +1275,7 @@ footer .risbuttons a img {
 
 
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
 
   .homecontainer .papular .child{
     min-width: 38%;
@@ -1301,14 +1295,9 @@ footer .risbuttons a img {
     min-height: 300px;
   }
 
-}
+} */
 
 @media screen and (max-width: 600px){
-
-  .homecontainer .papular .child{
-    min-width: 40%;
-    min-height: 300px;
-  }
 
   .homecontainer .imglink{
     flex-direction: column;
@@ -1323,6 +1312,11 @@ footer .risbuttons a img {
     border-radius: 15px;
   }
 
+  /* .homecontainer .papular .child{
+    min-width: 40%;
+    min-height: 300px;
+  }
+
   .homecontainer .seen .child{
     min-width: 40%;
     min-height: 300px;
@@ -1334,11 +1328,11 @@ footer .risbuttons a img {
   .homecontainer .football .child{
     min-width: 40%;
     min-height: 300px;
-  }
+  } */
 
 }
 
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
 
   .homecontainer .papular .child{
     min-width: 46%;
@@ -1358,11 +1352,11 @@ footer .risbuttons a img {
     min-height: 300px;
   }
 
-}
+} */
 
 @media screen and (max-width: 420px){
 
-  .homecontainer .papular .child{
+  /* .homecontainer .papular .child{
     min-width: 60%;
     min-height: 300px;
   }
@@ -1378,7 +1372,7 @@ footer .risbuttons a img {
   .homecontainer .football .child{
     min-width: 60%;
     min-height: 300px;
-  }
+  } */
 
   .homecontainer .getapp h3{
     font-size: 22px;
@@ -1408,10 +1402,10 @@ footer .risbuttons a img {
   .homecontainer .papular .papulartitle div a{
     font-size: 12px;
   }
-  .homecontainer .papular .child{
+  /* .homecontainer .papular .child{
     min-width: 70%;
     min-height: 300px;
-  }
+  } */
 
   .homecontainer .seen .seentitle h3{
     font-size: 20px;
@@ -1423,10 +1417,10 @@ footer .risbuttons a img {
   .homecontainer .seen .seentitle div a{
     font-size: 12px;
   }
-  .homecontainer .seen .child{
+  /* .homecontainer .seen .child{
     min-width: 70%;
     min-height: 300px;
-  }
+  } */
 
   .homecontainer .pool .pooltitle h3{
     font-size: 20px;
@@ -1438,10 +1432,10 @@ footer .risbuttons a img {
   .homecontainer .pool .pooltitle div a{
     font-size: 12px;
   }
-  .homecontainer .pool .child{
+  /* .homecontainer .pool .child{
     min-width: 70%;
     min-height: 300px;
-  }
+  } */
   
   .homecontainer .football .footballtitle h3{
     font-size: 20px;
@@ -1453,10 +1447,10 @@ footer .risbuttons a img {
   .homecontainer .football .footballtitle div a{
     font-size: 12px;
   }
-  .homecontainer .football .child{
+  /* .homecontainer .football .child{
     min-width: 70%;
     min-height: 300px;
-  }
+  } */
 
   .homecontainer .getapp div a{
     min-width: 110px;
