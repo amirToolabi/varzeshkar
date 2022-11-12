@@ -17,6 +17,7 @@ const ClubSlidersComponent = ({ clubItems, title, subtitle }) => {
         slidesToShow: 4.5,
         slidesToScroll: 1,
         initialSlide: 0,
+        rtl:true,
         responsive: [
             {
                 breakpoint: 1230,

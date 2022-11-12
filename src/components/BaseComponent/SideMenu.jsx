@@ -26,7 +26,7 @@ const SideMenu = () => {
                     </li>
                 </ul>
                 <h4>دسته بندی</h4>
-                <ul> میگی منو رو بندازم تو کامپوننت هدر؟
+                <ul>
                     <li>
                         <a href="#">
                             <img src={barbell} alt="" />
