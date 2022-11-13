@@ -57,6 +57,7 @@ import man from "../../images/papular/man.png";
 import woman from "../../images/papular/woman.png";
 import doted from "../../images/papular/doted.png";
 import ClubSlidersComponent from "../BaseComponent/ClubSlidersComponent";
+import ImgLink from "../BaseComponent/ImgLink";
 
 const Home = () => {
 
@@ -166,6 +167,7 @@ return (
         <div className="homecontainer">
           <SlideShow />
           <ClubSlidersComponent clubItems={clubItems} title={"محبوب ترین ها"} subtitle={"باشگاه های محبوب تایید شده توسط ورزشکار"} />
+          <ImgLink/>
           <ClubSlidersComponent clubItems={SeenClubItems} title={"پربازدید ترین ها"} subtitle={"بر اساس تعداد بازدید های هفته اخیر"} />
           <ClubSlidersComponent clubItems={PoolClubItems} title={"استخر ها"} subtitle={"استخر های روباز، جکوزی و سونا ..."} />
           <Getapp />

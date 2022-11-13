@@ -10,12 +10,9 @@ const CardClub = ({ title, address, img, woman, man, location, doted, listItemOn
                         <span className="locationgym">
                             <img src={location} alt="" />{address}
                         </span>
-                        <span>
-                            <a href="#">
+                        <span className="persons">
                                 {woman? <img src={woman} alt="" /> : undefined}
-                                {man? <img src={man} alt="" /> : undefined}
-                                
-                            </a>
+                                {man? <img src={man} alt="" /> : undefined}          
                         </span>
                     </div>
                     <ul>

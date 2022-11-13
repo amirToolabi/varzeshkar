@@ -13,7 +13,6 @@
 body {
   direction: rtl;
   background-color: rgb(243 244 246);
-  /* background-color: red; */
   overflow-x: hidden;
   height: 100vh;
 }
@@ -197,7 +196,7 @@ header .contentheader .login a img {
   top: 65px;
   bottom: 0;
   right: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: #fff;
   z-index: 8;
 }
@@ -344,7 +343,7 @@ section.golist{
   bottom: 0;
   right: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 
@@ -484,11 +483,10 @@ section.golist{
 .homecontainer .papular{
   width: 100%;
   margin-top: 40px;
-  direction: rtl;
 }
 
 .homecontainer .papular .papulartitle{
-  width: 100%;
+  width: 99%;
   margin-bottom: 10px;
 }
 
@@ -509,13 +507,13 @@ section.golist{
 }
 
 .homecontainer .papular .papulartitle div a{
-  color: #1976d2;
   font-size: 15px;
   text-decoration: none;
 }
 
 .homecontainer .papular .papularslids{
   width: 100%;
+  direction: ltr;
 }
 
 
@@ -560,13 +558,10 @@ section.golist{
   margin: 10px 0;
 }
 
-.homecontainer .papular .child a .middle .locationgyminfo span{
-  color: #6f7583;
-}
-
 .homecontainer .papular .child a .middle .locationgyminfo .locationgym{
   display: flex;
   align-items: center;
+  color: #6f7583;
 }
 
 .homecontainer .papular .child a .middle .locationgyminfo .locationgym img{
@@ -576,7 +571,11 @@ section.golist{
   margin-left: 3px;
 }
 
-.homecontainer .papular .child a .middle .locationgyminfo span img{
+.homecontainer .papular .child a .middle .locationgyminfo .persons{
+  display: flex;
+}
+
+.homecontainer .papular .child a .middle .locationgyminfo .persons img{
   width: 16px;
   height: 16px;
   margin: 0 2px;
@@ -644,260 +643,8 @@ section.golist{
 
 
 
-/* /////////////////////////////////////////////////////////////////////////////// */
-
-
-
-/* 
-.homecontainer .seen{
-  width: 100%;
-  margin-top: 40px;
-}
-
-.homecontainer .seen .seentitle{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.homecontainer .seen .seentitle h3{
-  width: 100%;
-  color: #374151;
-  font-size: 23px;
-}
-
-.homecontainer .seen .seentitle div{
-  display: flex;
-  justify-content: space-between;
-}
-
-.homecontainer .seen .seentitle div p{
-  color: #b3868e;
-  font-size: 16px;
-}
-
-.homecontainer .seen .seentitle div a{
-  color: #1976d2;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-.homecontainer .seen .seenslids{
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.homecontainer .seen .child{
-  min-width: 20%;
-  max-height: 300px;
-  margin: 0 12px;
-  border-radius: 15px;
-  background-color: #FFF;
-}
-
-.homecontainer .seen .child a{
-  text-decoration: none;
-  width: 100%;
-}
-.homecontainer .seen .child a img{
-  width: 100%;
-  height: 50%;
-  border-radius: 15px 15px 0 0;
-}
-
-.homecontainer .seen .child a .middle{
-  padding: 0 5px;
-}
-
-.homecontainer .seen .child a .middle p {
-  color: #6f7583;
-  font-size: 18px;
-  font-weight: 590;
-  padding: 0 7px;
-}
-
-.homecontainer .seen .child a .middle .locationgyminfo{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 7px;
-  margin: 7px 0;
-}
-
-.homecontainer .seen .child a .middle .locationgyminfo span{
-  color: #6f7583;
-}
-
-.homecontainer .seen .child a .middle .locationgyminfo span img{
-  width: 16px;
-  height: 16px;
-  margin-bottom: -3px;
-}
-
-.homecontainer .seen .child a .middle .locationgyminfo .locationgym img{
-  width: 12px;
-  height: 13px;
-  margin-left: 3px;
-}
-
-.homecontainer .seen .child a .middle ul{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.homecontainer .seen .child a .middle ul li img{
-  width: 14px;
-  height: 14px;
-  margin-bottom: -4px;
-}
-
-.homecontainer .seen .child a .middle ul li{
-  color: #a0a5ae;
-  font-size: 12px;
-}
-
-.homecontainer .seen .child a .reserved{
-  width: 94%;
-  margin: 10px auto 0;
-  border-top: 1px solid #e0e0e0;
-  text-align: center;
-  padding-top: 9px;
-  color: #7b939e;
-} */
-
-
-
-
 /* ////////////////////////////////////////////////////////////////////////// */
 
-
-
-
-/* .homecontainer .pool{
-  width: 100%;
-  margin-top: 40px;
-}
-
-.homecontainer .pool .pooltitle{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.homecontainer .pool .pooltitle h3{
-  width: 100%;
-  color: #374151;
-  font-size: 23px;
-}
-
-.homecontainer .pool .pooltitle div{
-  display: flex;
-  justify-content: space-between;
-}
-
-.homecontainer .pool .pooltitle div p{
-  color: #b3868e;
-  font-size: 16px;
-}
-
-
-.homecontainer .pool .poolslids{
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.homecontainer .pool .poolslids div a{
-  color: #1976d2;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-.homecontainer .pool .child{
-  min-width: 20%;
-  max-height: 300px;
-  margin: 0 12px;
-  border-radius: 15px;
-  background-color: #FFF;
-}
-
-.homecontainer .pool .child a{
-  text-decoration: none;
-  width: 100%;
-}
-.homecontainer .pool .child a img{
-  width: 100%;
-  height: 50%;
-  border-radius: 15px 15px 0 0;
-}
-
-.homecontainer .pool .child a .middle{
-  padding: 0 5px;
-}
-
-.homecontainer .pool .child a .middle p {
-  color: #6f7583;
-  font-size: 18px;
-  font-weight: 590;
-  padding: 0 7px;
-}
-
-.homecontainer .pool .child a .middle .locationgyminfo{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 7px;
-  margin: 7px 0;
-}
-
-.homecontainer .pool .child a .middle .locationgyminfo span{
-  color: #6f7583;
-}
-
-.homecontainer .pool .child a .middle .locationgyminfo span img{
-  width: 16px;
-  height: 16px;
-  margin-bottom: -3px;
-}
-
-.homecontainer .pool .child a .middle .locationgyminfo .locationgym img{
-  width: 12px;
-  height: 13px;
-  margin-left: 3px;
-}
-
-.homecontainer .pool .child a .middle ul{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.homecontainer .pool .child a .middle ul li img{
-  width: 14px;
-  height: 14px;
-  margin-bottom: -4px;
-}
-
-.homecontainer .pool .child a .middle ul li{
-  color: #a0a5ae;
-  font-size: 12px;
-}
-
-.homecontainer .pool .child a .reserved{
-  width: 94%;
-  margin: 10px auto 0;
-  border-top: 1px solid #e0e0e0;
-  text-align: center;
-  padding-top: 9px;
-  color: #7b939e;
-} */
-
-
-
-
-/* /////////////////////////////////////////////////////////////////////// */
 
 
 
@@ -933,170 +680,40 @@ section.golist{
 
 .homecontainer .getapp div a{
   background-color: #FFF;
-  padding: 8px 0;
-  min-width: 140px;
-  border-radius: 5px;
+  min-width: 130px;
+  border-radius: 3px;
   text-decoration: none;
+  padding: 5px 0;
   color: #4b5563;
   font-size: 16px;
   margin: 0 5px;
-}
-
-.homecontainer .getapp div a img{
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-}
-
-
-
-/* //////////////////////////////////////////////////////////////////////// */
-
-
-
-/* .homecontainer .football{
-  width: 100%;
-  margin-top: 40px;
-}
-
-.homecontainer .football .footballtitle{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.homecontainer .football .pooltfootballtitleitle h3{
-  width: 100%;
-  color: #374151;
-  font-size: 23px;
-}
-
-.homecontainer .football .footballtitle div{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.homecontainer .football .footballtitle div p{
-  color: #b3868e;
-  font-size: 16px;
+.homecontainer .getapp div a .bazzar{
+  width: 60px;
+  height: 35px;
+  object-fit: cover;
+  margin-top: -2px;
 }
 
-
-.homecontainer .football .footballslids{
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
+.homecontainer .getapp div a .apple{
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  margin-top: -3px;
 }
-
-.homecontainer .football .footballslids div a{
-  color: #1976d2;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-.homecontainer .football .child{
-  min-width: 20%;
-  max-height: 300px;
-  margin: 0 12px;
-  border-radius: 15px;
-  background-color: #FFF;
-}
-
-.homecontainer .football .child a{
-  text-decoration: none;
-  width: 100%;
-}
-.homecontainer .football .child a img{
-  width: 100%;
-  height: 50%;
-  border-radius: 15px 15px 0 0;
-}
-
-.homecontainer .football .child a .middle{
-  padding: 0 5px;
-}
-
-.homecontainer .football .child a .middle p {
-  color: #6f7583;
-  font-size: 18px;
-  font-weight: 590;
-  padding: 0 7px;
-}
-
-.homecontainer .football .child a .middle .locationgyminfo{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 7px;
-  margin: 7px 0;
-}
-
-.homecontainer .football .child a .middle .locationgyminfo span{
-  color: #6f7583;
-}
-
-.homecontainer .football .child a .middle .locationgyminfo span img{
-  width: 16px;
-  height: 16px;
-  margin-bottom: -3px;
-}
-
-.homecontainer .football .child a .middle .locationgyminfo .locationgym img{
-  width: 12px;
-  height: 13px;
-  margin-left: 3px;
-}
-
-.homecontainer .football .child a .middle ul{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.homecontainer .football .child a .middle ul li img{
-  width: 14px;
-  height: 14px;
-  margin-bottom: -4px;
-}
-
-.homecontainer .football .child a .middle ul li{
-  color: #a0a5ae;
-  font-size: 12px;
-}
-
-.homecontainer .football .child a .reserved{
-  width: 94%;
-  margin: 10px auto 0;
-  border-top: 1px solid #e0e0e0;
-  text-align: center;
-  padding-top: 9px;
-  color: #7b939e;
-} */
-
-/* //////////////////////////////////////////////////////////////////////// */
-
-/* .aboutcontent {
-  width: 60%;
-  background-color: #fff;
-  padding: 15px 20px;
-  margin: 105px auto 40px;
-  line-height: 2.5;
-  border-radius: 5px;
-}
-
-.aboutcontent h3 {
-  font-size: 28px;
-}
-
-.aboutcontent p {
-  font-size: 18px;
-} */
 
 
 
 
 /* //////////////////////////////////////////////////////////////////// */
+
+
+
+
 
 footer {
   background-color: #fff;
@@ -1104,6 +721,7 @@ footer {
   margin-top: 70px;
   position: relative;
   bottom: 0;
+  z-index: 999;
 }
 
 footer .aboutlink {
@@ -1158,14 +776,6 @@ footer .risbuttons a img {
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1230px){
-
-  /* .homecontainer .papular .child{
-    min-width: 23%;
-    min-height: 300px;
-  }
-
-} */
 
 @media screen and (max-width: 1020px){
 
@@ -1187,68 +797,7 @@ footer .risbuttons a img {
     margin: 80px auto 0;
   }
 
-  /* .homecontainer .papular .child{
-    min-width: 22%;
-    min-height: 300px;
-  }
-  .homecontainer .seen .child{
-    min-width: 22%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 22%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 22%;
-    min-height: 300px;
-  } */
-
 }
-
-/* @media screen and (max-width: 890px){
-
-  .homecontainer .papular .child{
-    min-width: 25%;
-    min-height: 300px;
-  }
-
-  .homecontainer .seen .child{
-    min-width: 25%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 25%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 25%;
-    min-height: 300px;
-  }
-
-} */
-
-/* @media screen and (max-width: 785px){
-
-  .homecontainer .papular .child{
-    min-width: 33%;
-    min-height: 300px;
-  }
-
-  .homecontainer .seen .child{
-    min-width: 33%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 33%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 33%;
-    min-height: 300px;
-  }
-
-} */
 
 
 
@@ -1274,29 +823,6 @@ footer .risbuttons a img {
 }
 
 
-
-/* @media screen and (max-width: 600px){
-
-  .homecontainer .papular .child{
-    min-width: 38%;
-    min-height: 300px;
-  }
-
-  .homecontainer .seen .child{
-    min-width: 38%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 38%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 38%;
-    min-height: 300px;
-  }
-
-} */
-
 @media screen and (max-width: 600px){
 
   .homecontainer .imglink{
@@ -1312,67 +838,17 @@ footer .risbuttons a img {
     border-radius: 15px;
   }
 
-  /* .homecontainer .papular .child{
-    min-width: 40%;
-    min-height: 300px;
-  }
-
-  .homecontainer .seen .child{
-    min-width: 40%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 40%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 40%;
-    min-height: 300px;
-  } */
-
 }
-
-/* @media screen and (max-width: 480px){
-
-  .homecontainer .papular .child{
-    min-width: 46%;
-    min-height: 300px;
-  }
-
-  .homecontainer .seen .child{
-    min-width: 46%;
-    min-height: 300px;
-  }
-  .homecontainer .pool .child{
-    min-width: 46%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 46%;
-    min-height: 300px;
-  }
-
-} */
 
 @media screen and (max-width: 420px){
 
-  /* .homecontainer .papular .child{
-    min-width: 60%;
-    min-height: 300px;
+  .homecontainer .papular .child a .middle p {
+    font-size: 16px;
   }
 
-  .homecontainer .seen .child{
-    min-width: 60%;
-    min-height: 300px;
+  .homecontainer .papular .child .middle ul li{
+    font-size: 11px;
   }
-  .homecontainer .pool .child{
-    min-width: 60%;
-    min-height: 300px;
-  }
-  .homecontainer .football .child{
-    min-width: 60%;
-    min-height: 300px;
-  } */
 
   .homecontainer .getapp h3{
     font-size: 22px;
@@ -1402,55 +878,6 @@ footer .risbuttons a img {
   .homecontainer .papular .papulartitle div a{
     font-size: 12px;
   }
-  /* .homecontainer .papular .child{
-    min-width: 70%;
-    min-height: 300px;
-  } */
-
-  .homecontainer .seen .seentitle h3{
-    font-size: 20px;
-  }
-  .homecontainer .seen .seentitle div p{
-    font-size: 14px;
-  }
-
-  .homecontainer .seen .seentitle div a{
-    font-size: 12px;
-  }
-  /* .homecontainer .seen .child{
-    min-width: 70%;
-    min-height: 300px;
-  } */
-
-  .homecontainer .pool .pooltitle h3{
-    font-size: 20px;
-  }
-  .homecontainer .pool .pooltitle div p{
-    font-size: 14px;
-  }
-
-  .homecontainer .pool .pooltitle div a{
-    font-size: 12px;
-  }
-  /* .homecontainer .pool .child{
-    min-width: 70%;
-    min-height: 300px;
-  } */
-  
-  .homecontainer .football .footballtitle h3{
-    font-size: 20px;
-  }
-  .homecontainer .football .footballtitle div p{
-    font-size: 14px;
-  }
-
-  .homecontainer .football .footballtitle div a{
-    font-size: 12px;
-  }
-  /* .homecontainer .football .child{
-    min-width: 70%;
-    min-height: 300px;
-  } */
 
   .homecontainer .getapp div a{
     min-width: 110px;
@@ -1537,6 +964,10 @@ footer .risbuttons a img {
 
 
 @media screen and (max-width: 420px){
+
+  header {
+    padding: 0 15px;
+  }
 
   header .contentheader .items {
     width: 60%;

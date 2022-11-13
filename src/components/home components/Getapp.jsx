@@ -11,8 +11,8 @@ const Getapp = () => {
             <div className="getapp">
                 <h3><img src={fav} alt="" />دانلود اپلیکیشن ورزشکار </h3>
                 <div>
-                    <a href="#">دریافت از <img src={bazar} /></a>
-                    <a href="#"><img src={apple} /> نسخه وب اپلیکیشن</a>
+                    <a href="">دریافت از<img className="bazzar" src={bazar} alt="" /></a>
+                    <a href=""><img className="apple" src={apple} alt="" />نسخه وب اپلیکیشن</a>
                 </div>
             </div>
         </>
