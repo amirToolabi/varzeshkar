@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Yekan";
+  src: url(../../public/myfont/Yekan/Yekan.ttf) format("ttf"),
+    url(../../public/myfont/Yekan/Yekan.eot) format("eot"),
+    url(../../public/myfont/Yekan/Yekan.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Yekan;
+  list-style: none;
+}
+
+
+.container {
+  width: 100vw;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.container .content {
+    width: 83%;
+    margin: 0 auto;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.container .content .thisclub {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container .content .thisclub .infoclub {
+    width: 35%;
+}
+
+.container .content .thisclub .infoclub .subclub {
+    padding: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+    rgba(251, 182, 159, 1) 0%,
+    rgba(248, 207, 194, 1) 100%
+    );
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubimg {
+    min-width: 70px;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubimg img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubname {
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubname p {
+    font-size: 11px;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubname div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0;
+}
+
+.container .content .thisclub .infoclub .subclub .subclubname div a {
+    font-size: 11px;
+    margin-right: 20px;
+    margin-bottom: -2px;
+    color: #999;
+}
+
+.container .content .thisclub .infoclub .club {
+    padding: 20px 20px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .content .thisclub .infoclub .club h3 {
+    font-size: 18px;
+}
+
+.container .content .thisclub .infoclub .club .star {
+    display: flex;
+    width: 100%;
+    margin: 5px 0 0 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.container .content .thisclub .infoclub .club .star .firststarchild {
+    padding: 0 0 0 10px;
+    height: 20px;
+    border-left: 1px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+}
+
+.container
+.content
+.thisclub
+.infoclub
+.club
+.star
+.firststarchild
+.imgstar
+img {
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+    margin: 0 2px -3px;
+    cursor: pointer;
+}
+
+.container .content .thisclub .infoclub .club .star .firststarchild span {
+    font-size: 14px;
+}
+
+.container .content .thisclub .infoclub .club .star .secondstarchild {
+    padding: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 13px;
+}
+
+.container .content .thisclub .infoclub .club .gender {
+    display: flex;
+    justify-content: start;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.container .content .thisclub .infoclub .club .gender .man {
+    display: flex;
+    justify-content: start;
+    height: 15px;
+    width: 40px;
+    background-color: #f48fb1;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.container .content .thisclub .infoclub .club .gender .man img {
+    margin-left: 5px;
+}
+
+.container .content .thisclub .infoclub .club .gender .woman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 40px;
+    background-color: #f48fb1;
+    border-radius: 15px;
+    padding: 0 13px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.container .content .thisclub .infoclub .club .gender .woman img {
+    margin-left: 5px;
+}
+
+.container .content .thisclub .infoclub .club .location {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.container .content .thisclub .infoclub .club .location .city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .thisclub .infoclub .club .location .city span {
+    font-size: 11px;
+    color: #999999;
+}
+.container .content .thisclub .infoclub .club .location .city span strong {
+    font-size: 14px;
+    color: #000;
+}
+
+.container .content .thisclub .infoclub .club .location .city .address {
+    width: 100%;
+}
+
+.container .content .thisclub .infoclub .club .location .address p {
+    font-size: 15px;
+    padding: 8px 0;
+}
+
+.container .content .thisclub .infoclub .club .location .address p span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.container .content .thisclub .infoclub .club .location button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.container .content .thisclub .infoclub .club .location button:hover {
+    background-color: #eeeeff;
+}
+
+.container .content .thisclub .infoclub .club .location button img {
+    margin-left: 10px;
+}
+
+.container .content .thisclub .infoclub .club .services {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f3f4f6;
+    margin-top: 10px;
+}
+
+.container .content .thisclub .infoclub .club .services span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.container .content .thisclub .infoclub .club .services ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .content .thisclub .infoclub .club .services ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    min-width: fit-content;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 15px;
+    margin: 5px 2px;
+}
+
+.container .content .thisclub .infoclub .club .services ul li img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.container .content .thisclub .infoclub .appearance {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content .thisclub .infoclub .appearance div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .content .thisclub .infoclub .appearance div span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: #999999;
+}
+
+.container .content .thisclub .infoclub .appearance div span img {
+    margin-left: 5px;
+    width: 13px;
+    height: 13px;
+}
+
+.container .content .thisclub .infoclub .appearance div strong {
+    font-size: 14px;
+}
+
+.container .content .thisclub .infoclub .problem {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.container .content .thisclub .infoclub .problem a {
+    min-width: fit-content;
+    padding: 1px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    color: #999999;
+    border-radius: 5px;
+}
+
+.container .content .thisclub .infoclub .problem img {
+    margin-left: 3px;
+}
+
+.container .content .thisclub .infoclub .problem a:hover {
+    background-color: #dee;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+
+
+.container .content .thisclub .aboutclub {
+    width: 63%;
+}
+
+.container .content .thisclub .aboutclub .imgtitle {
+  width: 94%;
+  min-height: fit-content;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content .thisclub .aboutclub .imgtitle img {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.container .content .thisclub .aboutclub .discribtion {
+  width: 94%;
+  min-height: fit-content;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.container .content .thisclub .aboutclub .discribtion h4 {
+  color: #4b5563;
+}
+
+.container .content .thisclub .aboutclub .discribtion ul li {
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+.container .content .thisclub .aboutclub .discribtion strong {
+  margin: 30px 0;
+}
+
+.container .content .thisclub .aboutclub .possibilities {
+  width: 94%;
+  min-height: fit-content;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.container .content .thisclub .aboutclub .possibilities strong {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.container .content .thisclub .aboutclub .possibilities ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .content .thisclub .aboutclub .possibilities ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  min-width: fit-content;
+  height: 30px;
+  font-size: 11px;
+  padding: 0 15px;
+  margin: 5px 2px;
+  color: #999999;
+}
+
+.container .content .thisclub .aboutclub .possibilities ul li img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  object-fit: cover;
+}

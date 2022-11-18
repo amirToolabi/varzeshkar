@@ -1,18 +1,21 @@
 @font-face{
-  font-family: 'IRsans';
-  src: url(../font/IRAN\ Sans\ Regular.ttf) format('truetype');
+  font-family: 'Yekan';
+  src: url(../myfont/Yekan/Yekan.ttf) format('ttf'),
+      url(../myfont/Yekan/Yekan.eot) format('eot'),
+      url(../myfont/Yekan/Yekan.woff) format('woff');
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
-  font-family: IRsans;
+  text-decoration: none;
   list-style: none;
+  font-family: Yekan;
 }
 
 body {
   direction: rtl;
-  background-color: rgb(243 244 246);
+  background-color: #f3f4f6;
   overflow-x: hidden;
   height: 100vh;
 }
@@ -97,28 +100,28 @@ header .contentheader .search form input {
   padding: 6px 15px 6px 0;
   background-color: #f0f0f0;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #959595;
 }
 header .contentheader .search form input::-webkit-input-placeholder {
   /* Edge */
   color: #aaa;
-  font-size: 20px;
+  font-size: 16px;
 }
 header .contentheader .search form input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #aaa;
-  font-size: 20px;
+  font-size: 16px;
 }
 header .contentheader .search form input::placeholder {
   color: #aaa;
-  font-size: 20px;
+  font-size: 16px;
 }
 header .contentheader .search button {
   background-color: #2196f3;
   color: #fff;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   height: 37px;
@@ -167,7 +170,7 @@ header .contentheader .login a {
   background-color: #e0e0e0;
   color: #556;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -718,9 +721,6 @@ section.golist{
 footer {
   background-color: #fff;
   width: 100%;
-  margin-top: 70px;
-  position: relative;
-  bottom: 0;
   z-index: 999;
 }
 
@@ -751,7 +751,7 @@ footer .aboutlink div a img {
 
 footer p {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px 0;
   color: #777;
 }
