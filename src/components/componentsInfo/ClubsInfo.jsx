@@ -12,6 +12,7 @@ import calendar from "../../images/infoClub/calendar.png"
 import check from "../../images/infoClub/circle-check-list.png"
 import cheklist from "../../images/infoClub/check-list.png"
 import warning from "../../images/infoClub/warning.png"
+import MessageSlide from "./MessageSlide"
 
 
 const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, region, address, services, area, height, year, discribtion, phone, possibilities }) => {
@@ -124,8 +125,8 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                         </div>
                     </div>
 
-                    <div className="message">
-
+                    <div className="messagecontent">
+                        <MessageSlide/>
                     </div>
 
                 </div>

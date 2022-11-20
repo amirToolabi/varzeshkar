@@ -38,7 +38,8 @@
 }
 
 .container .content .thisclub .infoclub .subclub {
-    padding: 10px;
+    max-width: 100%;
+    padding: 10px 20px;
     background: rgb(2, 0, 36);
     background: linear-gradient(
         180deg,
@@ -87,6 +88,7 @@
 }
 
 .container .content .thisclub .infoclub .club {
+    max-width: 100%;
     padding: 20px 20px 30px;
   background-color: #fff;
   border-radius: 10px;
@@ -105,11 +107,13 @@
 }
 
 .container .content .thisclub .infoclub .club .star .firststarchild {
+    width: 130px;
     padding: 0 0 0 10px;
     height: 20px;
     border-left: 1px solid #f3f4f6;
     display: flex;
     align-items: center;
+    background-color: chartreuse;
 }
 
 .container
@@ -141,6 +145,7 @@ img {
 }
 
 .container .content .thisclub .infoclub .club .gender {
+    width: 100%;
     display: flex;
     justify-content: start;
     padding: 10px 0;
@@ -179,12 +184,13 @@ img {
 }
 
 .container .content .thisclub .infoclub .club .location {
-    width: 100%;
+    max-width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid #f3f4f6;
 }
 
 .container .content .thisclub .infoclub .club .location .city {
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +206,7 @@ img {
 }
 
 .container .content .thisclub .infoclub .club .location .city .address {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container .content .thisclub .infoclub .club .location .address p {
@@ -238,6 +244,7 @@ img {
 }
 
 .container .content .thisclub .infoclub .club .services {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 15px;
@@ -275,6 +282,7 @@ img {
 }
 
 .container .content .thisclub .infoclub .appearance {
+    max-width: 100%;
     margin-top: 15px;
     padding: 20px;
     background-color: #fff;
@@ -308,10 +316,10 @@ img {
 }
 
 .container .content .thisclub .infoclub .problem {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: start;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .container .content .thisclub .infoclub .problem a {
@@ -346,7 +354,7 @@ img {
 }
 
 .container .content .thisclub .aboutclub .imgtitle {
-  width: 94%;
+  max-width: 100%;
   min-height: fit-content;
   background-color: #fff;
   border-radius: 7px;
@@ -364,7 +372,7 @@ img {
 }
 
 .container .content .thisclub .aboutclub .discribtion {
-  width: 94%;
+  max-width: 100%;
   min-height: fit-content;
   background-color: #fff;
   border-radius: 7px;
@@ -388,7 +396,7 @@ img {
 }
 
 .container .content .thisclub .aboutclub .possibilities {
-  width: 94%;
+  max-width: 100%;
   min-height: fit-content;
   background-color: #fff;
   border-radius: 7px;
@@ -426,3 +434,257 @@ img {
   margin-left: 5px;
   object-fit: cover;
 }
+
+/* ---------------------------------------------------------------------------------- */
+
+
+.container .content .messagecontent{
+    max-width: 100%;
+    min-height: fit-content;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px 10px 30px;
+    margin-top: 15px;
+}
+
+.container .content .messagecontent .message nav{
+    max-width: 100%;
+    text-align: right;
+}
+
+.container .content .messagecontent .message nav ul{
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+}
+
+.container .content .messagecontent .message nav ul li{
+    min-width: fit-content;
+    padding: 5px 20px;
+    color: #999;
+    font-size: 15px;
+    margin: 0 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.container .content .messagecontent .message nav ul li:nth-child(1){
+    color: #dd2c00;
+    border-bottom: 2px solid #dd2c00;
+}
+
+.container .content .messagecontent .message nav ul li:hover{
+    background-color: #eff;
+}
+
+.container .content .messagecontent .message .firstmessage{
+    width: 96%;
+    min-height: fit-content;
+    padding: 13px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e4effa;
+    border-radius: 8px;
+    margin: 10px auto 0;
+}
+
+.container .content .messagecontent .message .firstmessage p{
+    color: #3f76d2;
+    font-size: 13px;
+}
+
+.container .content .messagecontent .message .firstmessage a{
+    color: #000;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.container .content .messagecontent .message .firstmessage a:hover{
+    background-color: #d4ddff;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1024px){
+
+    .container .content {
+        width: 90%;
+        margin: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+    .container .content .thisclub {
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .container .content .thisclub .infoclub {
+        width: 96%;
+    }
+    
+    .container .content .thisclub .infoclub .subclub {
+        max-width: 100%;
+    }
+    .container .content .thisclub .infoclub .club {
+        max-width: 100%;  
+    }
+
+    .container .content .thisclub .infoclub .problem {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .container .content .thisclub .aboutclub {
+        width: 100%;
+    }
+
+    .container .content .thisclub .aboutclub .imgtitle {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 770px){
+
+    .container .content {
+        width: 90%;
+        margin: 0 25px;
+    }
+
+    .container .content .thisclub .infoclub {
+        width: 100%;
+    }
+    
+    .container .content .thisclub .infoclub .subclub {
+        max-width: 100%;
+    }
+    .container .content .thisclub .infoclub .club {
+        max-width: 100%;
+    }
+
+    .container .content .thisclub .aboutclub {
+        width: 100%;
+    }
+
+    .container .content .thisclub .aboutclub .imgtitle {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .container .content .messagecontent .message .firstmessage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 590px){
+    .container .content .thisclub .aboutclub .imgtitle img {
+        width: 100%;
+        height: 350px;
+      }
+}
+
+@media screen and (max-width: 436px){
+
+    .container .content .thisclub .infoclub .subclub .subclubimg {
+        min-width: 50px;
+    }
+    
+    .container .content .thisclub .infoclub .subclub .subclubimg img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .container .content .thisclub .infoclub .subclub .subclubname p {
+        font-size: 11px;
+    }
+
+    .container .content .thisclub .infoclub .subclub .subclubname div {
+        font-size: 12px;
+    }
+
+    .container .content .thisclub .infoclub .club h3 {
+        font-size: 16px;
+    }
+
+    .container .content .thisclub .infoclub .club .star .firststarchild span {
+        font-size: 13px;
+    }
+    
+    .container .content .thisclub .infoclub .club .star .secondstarchild {
+        padding: 0 10px 0 0;
+        display: flex;
+        align-items: center;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .container .content .thisclub .infoclub .club .location .city span strong {
+        font-size: 13px;
+        color: #000;
+    }
+
+    .container .content .thisclub .infoclub .club .location .address p {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    .container .content .thisclub .aboutclub .discribtion ul li {
+        padding: 6px 0;
+        font-size: 13px;
+      }
+
+      .container .content .messagecontent .message nav ul li{
+          max-width: fit-content;
+        font-size: 13px;
+    }
+
+    .container .content .thisclub .aboutclub .imgtitle img {
+        width: 100%;
+        height: 300px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,13 @@
 
 
-import CardClub from "./CardClub";
+// import CardClub from "./CardClub";
 
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import CardClub from "./CardClub";
 
 const ClubSlidersComponent = ({ clubItems, title, subtitle }) => {
 
@@ -76,6 +78,7 @@ const ClubSlidersComponent = ({ clubItems, title, subtitle }) => {
                 </div>
                 <div className="papularslids">
                     <Slider {...settings}>
+                        {/* <CardMap clubItems={clubItems} /> */}
                         {clubItems?.map((item) => <CardClub key={Math.random()} address={item.address} title={item.title} img={item.img} location={item.location} woman={item.woman} man={item.man} doted={item.doted} listItemOne={item.listItemOne} listItemTwo={item.listItemTwo} listItemThree={item.listItemThree} reserve={item.reserve} price={item.price} />)}
                     </Slider>
                 </div>

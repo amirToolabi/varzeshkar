@@ -496,7 +496,7 @@ section.golist{
 .homecontainer .papular .papulartitle h3{
   width: 100%;
   color: #374151;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .homecontainer .papular .papulartitle div{
@@ -506,11 +506,11 @@ section.golist{
 
 .homecontainer .papular .papulartitle div p{
   color: #b3868e;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .homecontainer .papular .papulartitle div a{
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -527,6 +527,7 @@ section.golist{
   margin: 0 10px;
   min-height: 330px;
   direction: rtl;
+  padding-bottom: 10px;
 }
 
 .homecontainer .papular .child a{
@@ -547,7 +548,7 @@ section.golist{
 
 .homecontainer .papular .child a .middle p {
   color: #6f7583;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 15px;
   font-weight: 590;
   padding: 0 7px;
@@ -565,6 +566,7 @@ section.golist{
   display: flex;
   align-items: center;
   color: #6f7583;
+  font-size: 14px;
 }
 
 .homecontainer .papular .child a .middle .locationgyminfo .locationgym img{
@@ -595,7 +597,7 @@ section.golist{
 
 .homecontainer .papular .child a .middle ul li{
   color: #a0a5ae;
-  font-size: 12px;
+  font-size: 10px;
   display: flex;
   align-items: center;
 }
@@ -613,6 +615,7 @@ section.golist{
   text-align: center;
   padding-top: 9px;
   color: #7b939e;
+  font-size: 13px;
 }
 
 
@@ -1031,4 +1034,3 @@ footer .risbuttons a img {
   footer p {
     font-size: 17px;
   }
-}
