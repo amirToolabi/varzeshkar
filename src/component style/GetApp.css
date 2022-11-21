@@ -1,0 +1,148 @@
+.homecontainer .getapp {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: fit-content;
+  background-color: #4b5563;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 25px 10px;
+}
+
+.homecontainer .getapp h3 {
+  font-size: 20px;
+  color: #fff;
+  width: 47%;
+}
+
+.homecontainer .getapp h3 img {
+  width: 40px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
+.homecontainer .getapp div {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+.homecontainer .getapp div a {
+  background-color: #fff;
+  max-width: fit-content;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #4b5563;
+  font-size: 14px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homecontainer .getapp div a .bazzar {
+  width: 60px;
+  height: 35px;
+  object-fit: cover;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.homecontainer .getapp div a .apple {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .homecontainer .getapp {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .homecontainer .getapp h3 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .homecontainer .getapp div {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .homecontainer .papular .child a .middle p {
+    font-size: 16px;
+  }
+
+  .homecontainer .papular .child .middle ul li {
+    font-size: 11px;
+  }
+  .homecontainer .getapp h3 {
+    font-size: 22px;
+  }
+
+  .homecontainer .getapp h3 {
+    font-size: 16px;
+  }
+
+  .homecontainer .getapp h3 img {
+    width: 30px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+  }
+
+  .homecontainer .getapp div a {
+    max-width: fit-content;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  .homecontainer .getapp div a .bazzar {
+    width: 50px;
+    height: 30px;
+    object-fit: cover;
+    margin-top: -2px;
+  }
+
+  .homecontainer .getapp div a .apple {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-top: -3px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .homecontainer .getapp {
+    padding: 10px 5px;
+  }
+
+  .homecontainer .getapp h3 {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .homecontainer .getapp div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homecontainer .getapp div a {
+    max-width: 100%;
+    font-size: 12px;
+    justify-content: center;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+  }
+}

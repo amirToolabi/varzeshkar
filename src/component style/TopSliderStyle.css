@@ -1,0 +1,46 @@
+.homecontainer .slids {
+  width: 100%;
+  height: 250px;
+  padding: 0;
+}
+
+.homecontainer .slids div {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 7px;
+}
+
+.homecontainer .slids div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 720px) {
+  .homecontainer .slids {
+    width: 100%;
+    height: 200px;
+  }
+
+  .homecontainer .slids div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homecontainer .slids {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homecontainer .slids {
+    width: 100%;
+    height: 110px;
+  }
+}

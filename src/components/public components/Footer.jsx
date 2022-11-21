@@ -1,4 +1,5 @@
 import React from "react";
+import "../../component style/FooterStyle.css"
 
 import insta from "../../images/instagram.png";
 import linkedin from "../../images/linkedin.png";

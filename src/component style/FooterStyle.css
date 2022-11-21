@@ -1,0 +1,68 @@
+footer {
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+footer .aboutlink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px;
+}
+
+footer .aboutlink div {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin: 0 15px;
+}
+footer .aboutlink div:hover {
+  background-color: #ddd;
+}
+
+footer .aboutlink div a img {
+  width: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0;
+  color: #777;
+}
+
+footer .risbuttons {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 67px;
+  background-color: #efefef;
+  display: none;
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 -1px 3px 3px #eee;
+}
+
+footer .risbuttons a img {
+  width: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  footer .risbuttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer p {
+    font-size: 14px;
+  }
+}

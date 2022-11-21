@@ -1,6 +1,6 @@
 
 
-// import CardClub from "./CardClub";
+import "../../component style/Papularstyle.css"
 
 import Slider from "react-slick";
 

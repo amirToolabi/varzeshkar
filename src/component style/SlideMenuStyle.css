@@ -1,0 +1,247 @@
+.lists {
+  width: 230px;
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  background-color: #fff;
+  z-index: 8;
+}
+
+.lists::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*.lists::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lists::-webkit-scrollbar-thumb {
+    background-color: #ff9928;
+    width: 100%;
+    border-radius: 10px;
+  } */
+
+@keyframes comlist {
+  from {
+    right: -240px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes golist {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -240px;
+  }
+}
+
+.lists ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.lists ul li {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.lists ul li:hover {
+  background-color: #efffef;
+}
+
+.lists ul li img {
+  width: 25px;
+}
+
+.lists ul li a {
+  padding: 8px 40px 8px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.lists ul li a span {
+  color: red;
+  font-size: 12px;
+}
+
+.lists ul li a img {
+  margin-bottom: -9px;
+}
+
+.lists .ul_game {
+  padding-top: 25px;
+}
+
+.lists h4 {
+  color: #688;
+  font-size: 17px;
+  text-align: right;
+  margin: 10px 20px;
+  font-weight: 700;
+}
+
+.lists .ul_soon {
+  padding-bottom: 30px;
+}
+
+#liststwo {
+  width: 230px;
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  overflow: auto;
+  background-color: #fff;
+  animation-name: comlist;
+  animation-duration: 0.6s;
+  z-index: 999;
+}
+
+#liststwo .scrollist {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+@keyframes comlist {
+  from {
+    right: -240px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+#liststwo::-webkit-scrollbar {
+  width: 5px;
+}
+
+@keyframes comlist {
+  from {
+    right: -240px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes golist {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -240px;
+  }
+}
+
+#liststwo ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#liststwo ul li {
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+#liststwo ul li:hover {
+  background-color: #efffef;
+}
+
+#liststwo ul li img {
+  width: 25px;
+}
+
+#liststwo ul li a {
+  padding: 8px 40px 8px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+#liststwo ul li a span {
+  color: red;
+  font-size: 14px;
+}
+
+#liststwo ul li a img {
+  margin-bottom: -9px;
+}
+
+#liststwo .ul_game {
+  padding-top: 25px;
+}
+
+#liststwo h4 {
+  color: #688;
+  font-size: 18px;
+  text-align: right;
+  margin: 10px 20px;
+  font-weight: 700;
+}
+
+#liststwo .ul_soon {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1020px) {
+  .lists {
+    display: none;
+  }
+
+  #liststwo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .lists {
+    width: 190px;
+    top: 0px;
+    animation-name: comlist;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes comlist {
+    from {
+      right: -200px;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  .lists ul li img {
+    width: 17px;
+  }
+
+  #liststwo ul li a {
+    padding: 8px 40px 8px 0;
+    font-size: 13px;
+  }
+
+  #liststwo ul li a span {
+    font-size: 11px;
+  }
+
+  #liststwo h4 {
+    font-size: 16px;
+  }
+}

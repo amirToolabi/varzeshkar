@@ -1,4 +1,6 @@
 
+import "../../component style/ImgLink.css"
+
 
 import club from "../../images/papular/clubLink.png"
 import coach from "../../images/papular/coachLink.png"

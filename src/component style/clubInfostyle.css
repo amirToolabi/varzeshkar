@@ -13,7 +13,6 @@
   list-style: none;
 }
 
-
 .container {
   width: 100vw;
   margin-top: 80px;
@@ -21,336 +20,331 @@
 }
 
 .container .content {
-    width: 83%;
-    margin: 0 auto;
-    justify-content: space-around;
-    box-sizing: border-box;
+  width: 83%;
+  margin: 0 auto;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
 .container .content .thisclub {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .container .content .thisclub .infoclub {
-    width: 35%;
+  width: 35%;
 }
 
 .container .content .thisclub .infoclub .subclub {
-    max-width: 100%;
-    padding: 10px 20px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-        180deg,
-        rgba(2, 0, 36, 1) 0%,
+  max-width: 100%;
+  padding: 10px 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
     rgba(251, 182, 159, 1) 0%,
     rgba(248, 207, 194, 1) 100%
-    );
-    border-radius: 8px;
-    display: flex;
-    margin-bottom: 15px;
-    height: 45px;
+  );
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 15px;
+  height: 45px;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubimg {
-    min-width: 70px;
+  min-width: 70px;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubimg img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubname {
-    min-width: fit-content;
-    display: flex;
-    flex-direction: column;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubname p {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubname div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0;
 }
 
 .container .content .thisclub .infoclub .subclub .subclubname div a {
-    font-size: 11px;
-    margin-right: 20px;
-    margin-bottom: -2px;
-    color: #999;
+  font-size: 11px;
+  margin-right: 20px;
+  margin-bottom: -2px;
+  color: #999;
 }
 
 .container .content .thisclub .infoclub .club {
-    max-width: 100%;
-    padding: 20px 20px 30px;
+  max-width: 100%;
+  padding: 20px 20px 30px;
   background-color: #fff;
   border-radius: 10px;
 }
 
 .container .content .thisclub .infoclub .club h3 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .container .content .thisclub .infoclub .club .star {
-    display: flex;
-    width: 100%;
-    margin: 5px 0 0 0;
+  display: flex;
+  width: 100%;
+  margin: 5px 0 0 0;
   padding-bottom: 13px;
   border-bottom: 1px solid #f3f4f6;
 }
 
 .container .content .thisclub .infoclub .club .star .firststarchild {
-    width: 130px;
-    padding: 0 0 0 10px;
-    height: 20px;
-    border-left: 1px solid #f3f4f6;
-    display: flex;
-    align-items: center;
-    background-color: chartreuse;
+  width: 130px;
+  padding: 0 0 0 10px;
+  height: 20px;
+  border-left: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  background-color: chartreuse;
 }
 
 .container
-.content
-.thisclub
-.infoclub
-.club
-.star
-.firststarchild
-.imgstar
-img {
-    width: 12px;
-    height: 12px;
-    object-fit: cover;
-    margin: 0 2px -3px;
-    cursor: pointer;
+  .content
+  .thisclub
+  .infoclub
+  .club
+  .star
+  .firststarchild
+  .imgstar
+  img {
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+  margin: 0 2px -3px;
+  cursor: pointer;
 }
 
 .container .content .thisclub .infoclub .club .star .firststarchild span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .container .content .thisclub .infoclub .club .star .secondstarchild {
-    padding: 0 10px 0 0;
-    display: flex;
-    align-items: center;
-    height: 20px;
-    font-size: 13px;
+  padding: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-size: 13px;
 }
 
 .container .content .thisclub .infoclub .club .gender {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    padding: 10px 0;
-    border-bottom: 1px solid #f3f4f6;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
 }
 
 .container .content .thisclub .infoclub .club .gender .man {
-    display: flex;
-    justify-content: start;
-    height: 15px;
-    width: 40px;
-    background-color: #f48fb1;
-    border-radius: 15px;
-    align-items: center;
+  display: flex;
+  justify-content: start;
+  height: 15px;
+  width: 40px;
+  background-color: #f48fb1;
+  border-radius: 15px;
+  align-items: center;
 }
 
 .container .content .thisclub .infoclub .club .gender .man img {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .container .content .thisclub .infoclub .club .gender .woman {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 22px;
-    width: 40px;
-    background-color: #f48fb1;
-    border-radius: 15px;
-    padding: 0 13px;
-    font-size: 11px;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  width: 40px;
+  background-color: #f48fb1;
+  border-radius: 15px;
+  padding: 0 13px;
+  font-size: 11px;
+  color: #fff;
 }
 
 .container .content .thisclub .infoclub .club .gender .woman img {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .container .content .thisclub .infoclub .club .location {
-    max-width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #f3f4f6;
+  max-width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
 }
 
 .container .content .thisclub .infoclub .club .location .city {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container .content .thisclub .infoclub .club .location .city span {
-    font-size: 11px;
-    color: #999999;
+  font-size: 11px;
+  color: #999999;
 }
 .container .content .thisclub .infoclub .club .location .city span strong {
-    font-size: 14px;
-    color: #000;
+  font-size: 14px;
+  color: #000;
 }
 
 .container .content .thisclub .infoclub .club .location .city .address {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container .content .thisclub .infoclub .club .location .address p {
-    font-size: 15px;
-    padding: 8px 0;
+  font-size: 15px;
+  padding: 8px 0;
 }
 
 .container .content .thisclub .infoclub .club .location .address p span {
-    font-size: 11px;
-    color: #999999;
+  font-size: 11px;
+  color: #999999;
 }
 
 .container .content .thisclub .infoclub .club .location button {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.16);
-    border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 12px;
 }
 
 .container .content .thisclub .infoclub .club .location button:hover {
-    background-color: #eeeeff;
+  background-color: #eeeeff;
 }
 
 .container .content .thisclub .infoclub .club .location button img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .container .content .thisclub .infoclub .club .services {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #f3f4f6;
-    margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f3f4f6;
+  margin-top: 10px;
 }
 
 .container .content .thisclub .infoclub .club .services span {
-    font-size: 11px;
-    color: #999999;
+  font-size: 11px;
+  color: #999999;
 }
 
 .container .content .thisclub .infoclub .club .services ul {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container .content .thisclub .infoclub .club .services ul li {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 30px;
-    min-width: fit-content;
-    height: 30px;
-    font-size: 12px;
-    padding: 0 15px;
-    margin: 5px 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  min-width: fit-content;
+  height: 30px;
+  font-size: 12px;
+  padding: 0 15px;
+  margin: 5px 2px;
 }
 
 .container .content .thisclub .infoclub .club .services ul li img {
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
 }
 
 .container .content .thisclub .infoclub .appearance {
-    max-width: 100%;
-    margin-top: 15px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
+  max-width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .content .thisclub .infoclub .appearance div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .container .content .thisclub .infoclub .appearance div span {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    font-size: 11px;
-    color: #999999;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 11px;
+  color: #999999;
 }
 
 .container .content .thisclub .infoclub .appearance div span img {
-    margin-left: 5px;
-    width: 13px;
-    height: 13px;
+  margin-left: 5px;
+  width: 13px;
+  height: 13px;
 }
 
 .container .content .thisclub .infoclub .appearance div strong {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .container .content .thisclub .infoclub .problem {
-    max-width: 100%;
-    display: flex;
-    justify-content: start;
-    margin: 10px 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: start;
+  margin: 10px 0;
 }
 
 .container .content .thisclub .infoclub .problem a {
-    min-width: fit-content;
-    padding: 1px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    font-size: 12px;
-    color: #999999;
-    border-radius: 5px;
+  min-width: fit-content;
+  padding: 1px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  color: #999999;
+  border-radius: 5px;
 }
 
 .container .content .thisclub .infoclub .problem img {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 .container .content .thisclub .infoclub .problem a:hover {
-    background-color: #dee;
+  background-color: #dee;
 }
-
-
 
 /* ------------------------------------------------------------------------- */
 
-
-
-
 .container .content .thisclub .aboutclub {
-    width: 63%;
+  width: 63%;
 }
 
 .container .content .thisclub .aboutclub .imgtitle {
@@ -437,254 +431,219 @@ img {
 
 /* ---------------------------------------------------------------------------------- */
 
-
-.container .content .messagecontent{
-    max-width: 100%;
-    min-height: fit-content;
-    background-color: #fff;
-    border-radius: 7px;
-    padding: 20px 10px 30px;
-    margin-top: 15px;
+.container .content .messagecontent {
+  max-width: 100%;
+  min-height: fit-content;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 20px 10px 30px;
+  margin-top: 15px;
 }
 
-.container .content .messagecontent .message nav{
-    max-width: 100%;
-    text-align: right;
+.container .content .messagecontent .message nav {
+  max-width: 100%;
+  text-align: right;
 }
 
-.container .content .messagecontent .message nav ul{
-    max-width: 100%;
-    display: flex;
-    justify-content: start;
-    padding: 0;
+.container .content .messagecontent .message nav ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 0;
 }
 
-.container .content .messagecontent .message nav ul li{
-    min-width: fit-content;
-    padding: 5px 20px;
-    color: #999;
-    font-size: 15px;
-    margin: 0 2px;
-    transition: all .3s ease;
-    cursor: pointer;
+.container .content .messagecontent .message nav ul li {
+  min-width: fit-content;
+  padding: 5px 20px;
+  color: #999;
+  font-size: 15px;
+  margin: 0 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.container .content .messagecontent .message nav ul li:nth-child(1){
-    color: #dd2c00;
-    border-bottom: 2px solid #dd2c00;
+.container .content .messagecontent .message nav ul li:nth-child(1) {
+  color: #dd2c00;
+  border-bottom: 2px solid #dd2c00;
 }
 
-.container .content .messagecontent .message nav ul li:hover{
-    background-color: #eff;
+.container .content .messagecontent .message nav ul li:hover {
+  background-color: #eff;
 }
 
-.container .content .messagecontent .message .firstmessage{
-    width: 96%;
-    min-height: fit-content;
-    padding: 13px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e4effa;
-    border-radius: 8px;
-    margin: 10px auto 0;
+.container .content .messagecontent .message .firstmessage {
+  width: 96%;
+  min-height: fit-content;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4effa;
+  border-radius: 8px;
+  margin: 10px auto 0;
 }
 
-.container .content .messagecontent .message .firstmessage p{
-    color: #3f76d2;
-    font-size: 13px;
+.container .content .messagecontent .message .firstmessage p {
+  color: #3f76d2;
+  font-size: 13px;
 }
 
-.container .content .messagecontent .message .firstmessage a{
-    color: #000;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all .3s ease;
+.container .content .messagecontent .message .firstmessage a {
+  color: #000;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-.container .content .messagecontent .message .firstmessage a:hover{
-    background-color: #d4ddff;
+.container .content .messagecontent .message .firstmessage a:hover {
+  background-color: #d4ddff;
 }
-
-
 
 /* ------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 1024px) {
+  .container .content {
+    width: 90%;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
 
-@media screen and (max-width: 1024px){
+  .container .content .thisclub {
+    flex-direction: column;
+    justify-content: none;
+  }
 
-    .container .content {
-        width: 90%;
-        margin: 0 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    
-    .container .content .thisclub {
-        flex-direction: column;
-        justify-content: none;
-    }
+  .container .content .thisclub .infoclub {
+    width: 96%;
+  }
 
-    .container .content .thisclub .infoclub {
-        width: 96%;
-    }
-    
-    .container .content .thisclub .infoclub .subclub {
-        max-width: 100%;
-    }
-    .container .content .thisclub .infoclub .club {
-        max-width: 100%;  
-    }
+  .container .content .thisclub .infoclub .subclub {
+    max-width: 100%;
+  }
+  .container .content .thisclub .infoclub .club {
+    max-width: 100%;
+  }
 
-    .container .content .thisclub .infoclub .problem {
-        max-width: 100%;
-        margin: 20px 0;
-    }
+  .container .content .thisclub .infoclub .problem {
+    max-width: 100%;
+    margin: 20px 0;
+  }
 
-    .container .content .thisclub .aboutclub {
-        width: 100%;
-    }
+  .container .content .thisclub .aboutclub {
+    width: 100%;
+  }
 
-    .container .content .thisclub .aboutclub .imgtitle {
-        max-width: 100%;
-        padding: 15px;
-    }
-
+  .container .content .thisclub .aboutclub .imgtitle {
+    max-width: 100%;
+    padding: 15px;
+  }
 }
 
+@media screen and (max-width: 770px) {
+  .container .content {
+    width: 90%;
+    margin: 0 25px;
+  }
 
-@media screen and (max-width: 770px){
+  .container .content .thisclub .infoclub {
+    width: 100%;
+  }
 
-    .container .content {
-        width: 90%;
-        margin: 0 25px;
-    }
+  .container .content .thisclub .infoclub .subclub {
+    max-width: 100%;
+  }
+  .container .content .thisclub .infoclub .club {
+    max-width: 100%;
+  }
 
-    .container .content .thisclub .infoclub {
-        width: 100%;
-    }
-    
-    .container .content .thisclub .infoclub .subclub {
-        max-width: 100%;
-    }
-    .container .content .thisclub .infoclub .club {
-        max-width: 100%;
-    }
+  .container .content .thisclub .aboutclub {
+    width: 100%;
+  }
 
-    .container .content .thisclub .aboutclub {
-        width: 100%;
-    }
+  .container .content .thisclub .aboutclub .imgtitle {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
 
-    .container .content .thisclub .aboutclub .imgtitle {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 15px;
-    }
-
-    .container .content .messagecontent .message .firstmessage{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
+  .container .content .messagecontent .message .firstmessage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 590px){
-    .container .content .thisclub .aboutclub .imgtitle img {
-        width: 100%;
-        height: 350px;
-      }
+@media screen and (max-width: 590px) {
+  .container .content .thisclub .aboutclub .imgtitle img {
+    width: 100%;
+    height: 350px;
+  }
 }
 
-@media screen and (max-width: 436px){
+@media screen and (max-width: 436px) {
+  .container .content .thisclub .infoclub .subclub .subclubimg {
+    min-width: 50px;
+  }
 
-    .container .content .thisclub .infoclub .subclub .subclubimg {
-        min-width: 50px;
-    }
-    
-    .container .content .thisclub .infoclub .subclub .subclubimg img {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-    }
+  .container .content .thisclub .infoclub .subclub .subclubimg img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
 
-    .container .content .thisclub .infoclub .subclub .subclubname p {
-        font-size: 11px;
-    }
+  .container .content .thisclub .infoclub .subclub .subclubname p {
+    font-size: 11px;
+  }
 
-    .container .content .thisclub .infoclub .subclub .subclubname div {
-        font-size: 12px;
-    }
+  .container .content .thisclub .infoclub .subclub .subclubname div {
+    font-size: 12px;
+  }
 
-    .container .content .thisclub .infoclub .club h3 {
-        font-size: 16px;
-    }
+  .container .content .thisclub .infoclub .club h3 {
+    font-size: 16px;
+  }
 
-    .container .content .thisclub .infoclub .club .star .firststarchild span {
-        font-size: 13px;
-    }
-    
-    .container .content .thisclub .infoclub .club .star .secondstarchild {
-        padding: 0 10px 0 0;
-        display: flex;
-        align-items: center;
-        height: 20px;
-        font-size: 12px;
-    }
+  .container .content .thisclub .infoclub .club .star .firststarchild span {
+    font-size: 13px;
+  }
 
-    .container .content .thisclub .infoclub .club .location .city span strong {
-        font-size: 13px;
-        color: #000;
-    }
+  .container .content .thisclub .infoclub .club .star .secondstarchild {
+    padding: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 12px;
+  }
 
-    .container .content .thisclub .infoclub .club .location .address p {
-        font-size: 13px;
-        padding: 8px 0;
-    }
+  .container .content .thisclub .infoclub .club .location .city span strong {
+    font-size: 13px;
+    color: #000;
+  }
 
-    .container .content .thisclub .aboutclub .discribtion ul li {
-        padding: 6px 0;
-        font-size: 13px;
-      }
+  .container .content .thisclub .infoclub .club .location .address p {
+    font-size: 13px;
+    padding: 8px 0;
+  }
 
-      .container .content .messagecontent .message nav ul li{
-          max-width: fit-content;
-        font-size: 13px;
-    }
+  .container .content .thisclub .aboutclub .discribtion ul li {
+    padding: 6px 0;
+    font-size: 13px;
+  }
 
-    .container .content .thisclub .aboutclub .imgtitle img {
-        width: 100%;
-        height: 300px;
-      }
+  .container .content .messagecontent .message nav ul li {
+    max-width: fit-content;
+    font-size: 13px;
+  }
+
+  .container .content .thisclub .aboutclub .imgtitle img {
+    width: 100%;
+    height: 300px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

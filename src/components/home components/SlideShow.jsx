@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../../component style/TopSliderStyle.css"
+
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
@@ -9,7 +11,7 @@ import exer from "../../images/firstchild/banner-3.2b631b1.png";
 import football from "../../images/firstchild/banner-4.9bac380.png";
 
 const SlideShow = () => {
-  
+
 
   return (
     <>

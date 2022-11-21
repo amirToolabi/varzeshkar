@@ -1,3 +1,7 @@
+
+import"../../component style/SlideMenuStyle.css"
+
+
 import aerobic from "../../images/lists/aerobic.e98cf0a.png";
 import barbell from "../../images/lists/barbell.01cdc27.png";
 import boxing from "../../images/lists/boxing-gloves.d753cfd.png";
@@ -13,6 +17,8 @@ import swimming from "../../images/lists/swimming-pool.e565a04.png";
 import trx from "../../images/lists/trx.dad3cea.png";
 import yoga from "../../images/lists/yoga.0296099.png";
 import more from "../../images/lists/more.png";
+
+
 const SideMenu = () => {
     return (
         <>

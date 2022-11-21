@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../../component style/HeaderStyle.css"
+
 import { useDispatch } from "react-redux";
 import { comelist } from "../../redux/actions/ListAction";
 

@@ -1,0 +1,19 @@
+.homandlist {
+  width: 100%;
+  background-color: burlywood;
+}
+
+.homecontainer {
+  width: 75%;
+  position: relative;
+  left: -120px;
+  margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1020px) {
+  .homecontainer {
+    width: 90%;
+    left: 0;
+    margin: 80px auto 0;
+  }
+}

@@ -1,0 +1,36 @@
+.shadow {
+  background-color: rgba(120, 120, 120, 60%);
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  animation-name: combacklist;
+  animation-duration: 0.2s;
+}
+
+@keyframes combacklist {
+  from {
+    right: -101%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+section.golist {
+  animation-name: golist;
+  animation-duration: 0.6s;
+}
+
+@keyframes golist {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -240;
+  }
+}

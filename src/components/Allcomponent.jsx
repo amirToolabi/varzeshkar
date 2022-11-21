@@ -13,8 +13,8 @@ const Allcomponent = () => {
     <>
       <div className={comelist? "allhome" : undefined}>
         <Header />
-          <Home />
-        <Footer />
+        <Home />
+        {/* <Footer /> */}
       </div>
     </>
   );
