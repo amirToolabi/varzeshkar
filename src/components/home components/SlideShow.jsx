@@ -16,7 +16,7 @@ const SlideShow = () => {
   return (
     <>
       <div className="slids">
-        <AwesomeSlider>
+        <AwesomeSlider animation="cubeAnimation">
           <div>
             <a href="">
               <img src={run} alt="" />

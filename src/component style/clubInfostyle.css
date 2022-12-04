@@ -341,7 +341,11 @@
   background-color: #dee;
 }
 
+
+
 /* ------------------------------------------------------------------------- */
+
+
 
 .container .content .thisclub .aboutclub {
   width: 63%;
@@ -503,7 +507,11 @@
   background-color: #d4ddff;
 }
 
+
+
 /* ------------------------------------------------------------------------------- */
+
+
 
 @media screen and (max-width: 1024px) {
   .container .content {
@@ -536,7 +544,7 @@
   }
 
   .container .content .thisclub .aboutclub {
-    width: 100%;
+    width: 96%;
   }
 
   .container .content .thisclub .aboutclub .imgtitle {

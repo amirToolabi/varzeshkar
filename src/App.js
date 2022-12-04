@@ -10,7 +10,6 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Allcomponent />} />
           <Route path="/club" element={<ComponentClubInfo />} />
-          
         </Routes>
       </>
     </>

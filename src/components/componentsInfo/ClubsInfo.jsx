@@ -17,6 +17,9 @@ import MessageSlide from "./MessageSlide"
 
 const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, region, address, services, area, height, year, discribtion, phone, possibilities }) => {
 
+    
+
+
     return (
         <>
             <section className="container">
