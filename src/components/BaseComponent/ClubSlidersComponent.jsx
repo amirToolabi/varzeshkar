@@ -9,16 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 import CardClub from "./CardClub";
 
-const ClubSlidersComponent = ({ clubItems, title, subtitle }) => {
-
+const ClubSlidersComponent = ({ clubItems, title, subtitle, setting = 4.5 }) => {
 
     var settings = {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 4.5,
+        slidesToShow: setting,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide:0,
         // rtl:true,
         responsive: [
             {
@@ -77,8 +76,7 @@ const ClubSlidersComponent = ({ clubItems, title, subtitle }) => {
                     </div>
                 </div>
                 <div className="papularslids">
-                    <Slider {...settings}>
-                        {/* <CardMap clubItems={clubItems} /> */}
+                    <Slider {...setting}>
                         {clubItems?.map((item) => <CardClub key={Math.random()} address={item.address} title={item.title} img={item.img} location={item.location} woman={item.woman} man={item.man} doted={item.doted} listItemOne={item.listItemOne} listItemTwo={item.listItemTwo} listItemThree={item.listItemThree} reserve={item.reserve} price={item.price} />)}
                     </Slider>
                 </div>

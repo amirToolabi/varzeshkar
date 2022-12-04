@@ -1,8 +1,6 @@
 
 import "../../component style/clubInfostyle.css"
 
-
-
 import star from "../../images/infoClub/star.png"
 import nostar from "../../images/infoClub/nostar.png"
 import wide from "../../images/infoClub/wide.png"
@@ -13,12 +11,34 @@ import check from "../../images/infoClub/circle-check-list.png"
 import cheklist from "../../images/infoClub/check-list.png"
 import warning from "../../images/infoClub/warning.png"
 import MessageSlide from "./MessageSlide"
+import ClubSlidersComponent from "../BaseComponent/ClubSlidersComponent"
+
+import onePool from "../../images/pool/1.jfif";
+import location from "../../images/papular/location.png";
+import doted from "../../images/papular/doted.png";
 
 
 const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, region, address, services, area, height, year, discribtion, phone, possibilities }) => {
+    const FootballClubItems = [
+        { img: onePool, title: 'باشگاه ستاره ساز', address: 'تهران - منطقه ۱۰', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'باشگاه فوتبال اسپایر', address: 'تهران - منطقه ۱', location, man, doted, listItemOne: "فوتبال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'زیمن چمن ایرانشهر', address: 'کرج', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'زمین چمن منتخب ستارگان', address: 'تهران - منطقه ۱۰', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'زیمن چمن اقاقیا', address: 'تهران - منطقه ۱۴', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'زمین ورزشی فوتبال', address: 'رشت', location, man, doted, listItemOne: "فوتبال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'زمین فوتبال شهرک آزمایش', address: 'اصفهان', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'آکادمی مقاوت غرب', address: 'تهران - منطقه ۲', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'باشگاه ورزشی مهارت', address: 'تهران - منطقه ۱۰', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'مجموعه ورزشی ثامن', address: 'مشهد', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'سالن چند منظوره گلبانگ', address: 'تهران - منطقه ۵', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'شهید لشگری', address: 'تهران - منطقه ۱', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'مدرسه فوتبال راد', address: 'تهران - منطقه ۱۷', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'باشگاه شهید چمران', address: 'تهران - منطقه ۹', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'باشگاه ورزشی پژواک', address: 'کرج', location, man, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+        { img: onePool, title: 'مجموعه ورزشی کوهستان', address: 'کرج', location, man, woman, doted, listItemOne: "فوتبال", listItemTwo: "فوتسال", reserve: "رزرو آنلاین ندارد" },
+      ]
 
-    
-
+     
 
     return (
         <>
@@ -132,6 +152,7 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                         <MessageSlide/>
                     </div>
 
+                    <ClubSlidersComponent setting={3.5} clubItems={FootballClubItems} title={"فوتبال و فوتسال"} subtitle={"رزرو سالن های فوتسال"} />
                 </div>
             </section>
         </>
