@@ -1,6 +1,6 @@
 .shadow {
   background-color: rgba(120, 120, 120, 60%);
-  z-index: 999999;
+  z-index: 9999;
   position: fixed;
   top: 0;
   bottom: 0;

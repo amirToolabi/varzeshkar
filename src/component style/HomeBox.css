@@ -2,6 +2,11 @@
   overflow-y: hidden;
 }
 
+#stopscroll{
+  height: 52vh !important;
+  overflow-y: hidden;
+}
+
 .homeandlist {
   width: 100%;
   position: relative;

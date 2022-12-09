@@ -153,7 +153,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="homeandlist">
+      <div className="homeandlist" id={comelist ? "stopscroll" : null}>
         {/* ================ side bar ================= */}
         <section className="lists" id="lists">
           <SideMenu />
