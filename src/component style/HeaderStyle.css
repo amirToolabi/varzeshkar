@@ -2,6 +2,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
+  right: -1px !important;
   background-color: #fff;
   box-shadow: 0 2px 7px 1px #ded;
   width: 100vw;
@@ -11,9 +12,9 @@ header {
 }
 
 header .contentheader {
-  width: 98%;
+  margin: auto;
+  width: 97%;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,6 +178,7 @@ header .contentheader .login a img {
 }
 
 @media screen and (max-width: 790px) {
+
   header .contentheader .items {
     width: 70%;
     display: flex;

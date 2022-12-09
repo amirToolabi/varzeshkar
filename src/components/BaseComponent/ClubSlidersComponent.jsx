@@ -76,7 +76,7 @@ const ClubSlidersComponent = ({ clubItems, title, subtitle, setting = 4.5 }) => 
                     </div>
                 </div>
                 <div className="papularslids">
-                    <Slider {...setting}>
+                    <Slider {...settings}>
                         {clubItems?.map((item) => <CardClub key={Math.random()} address={item.address} title={item.title} img={item.img} location={item.location} woman={item.woman} man={item.man} doted={item.doted} listItemOne={item.listItemOne} listItemTwo={item.listItemTwo} listItemThree={item.listItemThree} reserve={item.reserve} price={item.price} />)}
                     </Slider>
                 </div>

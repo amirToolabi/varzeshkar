@@ -1,12 +1,20 @@
-.homandlist {
+.allhome{
+  overflow-y: hidden;
+}
+
+.homeandlist {
   width: 100%;
-  background-color: burlywood;
+  position: relative;
+  right: 0px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .homecontainer {
   width: 75%;
   position: relative;
-  left: -120px;
+  right: 120px;
   margin: 80px auto 0;
 }
 
@@ -14,6 +22,7 @@
   .homecontainer {
     width: 90%;
     left: 0;
+    right: 0;
     margin: 80px auto 0;
   }
 }

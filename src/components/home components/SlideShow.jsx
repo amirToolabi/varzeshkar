@@ -2,21 +2,32 @@ import React from "react";
 
 import "../../component style/TopSliderStyle.css"
 
-import AwesomeSlider from 'react-awesome-slider';
+// import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
 import run from "../../images/firstchild/banner-2.eff203b.png";
 import game from "../../images/firstchild/banner-1.a8d334e.png";
 import exer from "../../images/firstchild/banner-3.2b631b1.png";
 import football from "../../images/firstchild/banner-4.9bac380.png";
+import Slider from "react-slick";
 
 const SlideShow = () => {
+
+
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    rtl:true,
+  };
 
 
   return (
     <>
       <div className="slids">
-        <AwesomeSlider animation="cubeAnimation">
+        <Slider {...settings}>
           <div>
             <a href="">
               <img src={run} alt="" />
@@ -37,7 +48,7 @@ const SlideShow = () => {
               <img src={football} alt="" />
             </a>
           </div>
-        </AwesomeSlider>
+        </Slider>
       </div>
     </>
   );

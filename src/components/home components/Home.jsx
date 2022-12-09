@@ -162,9 +162,7 @@ const Home = () => {
           <section className={comelist ? null : "golist"} id="liststwo">
             <SideMenu />
           </section>}
-        {comelist ? <Shadow /> : null}
         {/* ================ side bar ================= */}
-
         <div className="homecontainer">
           <SlideShow />
           <ClubSlidersComponent clubItems={clubItems} title={"محبوب ترین ها"} subtitle={"باشگاه های محبوب تایید شده توسط ورزشکار"} />
@@ -176,6 +174,7 @@ const Home = () => {
 
         </div>
       </div>
+        {comelist ? <Shadow /> : null}
     </>
   );
 };

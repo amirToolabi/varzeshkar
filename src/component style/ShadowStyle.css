@@ -1,13 +1,12 @@
 .shadow {
   background-color: rgba(120, 120, 120, 60%);
-  z-index: 99;
+  z-index: 999999;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100vw;
-  overflow: hidden;
+  overflow-y: hidden;
   animation-name: combacklist;
   animation-duration: 0.2s;
 }
