@@ -1,5 +1,5 @@
 import React from "react";
-import { Route,Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Allcomponent from "./components/Allcomponent";
 import ComponentClubInfo from "./components/componentsInfo/ComponentClubInfo";
 
@@ -17,4 +17,3 @@ const App = () => {
 };
 
 export default App;
-$ 
