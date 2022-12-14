@@ -1,5 +1,5 @@
 
-import style from "../../component style/SlideMenuStyle.css"
+import style from "../../component style/SlideMenuStyle.module.css"
 
 
 import aerobic from "../../images/lists/aerobic.e98cf0a.png";

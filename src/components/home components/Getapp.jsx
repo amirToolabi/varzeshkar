@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from "../../component style/GetApp.css"
+import style from "../../component style/GetApp.module.css"
 
 
 import fav from '../../images/favicon.d9ff36a.png'

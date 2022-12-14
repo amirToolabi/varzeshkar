@@ -1,5 +1,5 @@
 
-import style from "../../component style/ImgLink.css"
+import style from "../../component style/ImgLink.module.css"
 
 
 import club from "../../images/papular/clubLink.png"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import style from "../../component style/CardClub.css"
+import style from "../../component style/CardClub.module.css"
 
 const CardClub = ({ title, address, img, woman, man, location, doted, listItemOne, listItemTwo, listItemThree, reserve, price }) => {
     return (

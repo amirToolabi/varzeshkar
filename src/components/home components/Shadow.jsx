@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from "../../component style/ShadowStyle.css"
+import style from "../../component style/ShadowStyle.module.css"
 
 
 import { useDispatch } from 'react-redux';

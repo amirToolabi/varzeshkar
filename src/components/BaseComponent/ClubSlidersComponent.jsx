@@ -1,11 +1,11 @@
 
 
-import style from "../../component style/ClubSliderComponent.css"
+import style from "../../component style/ClubSliderComponent.module.css"
 
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 import CardClub from "./CardClub";
 

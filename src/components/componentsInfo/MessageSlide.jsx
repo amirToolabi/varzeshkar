@@ -1,5 +1,5 @@
 
-import style from "../../component style/messageinfoclub.css"
+import style from "../../component style/messageinfoclub.module.css"
 
 import user from "../../images/infoClub/user.png"
 

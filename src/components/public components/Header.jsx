@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "../../component style/HeaderStyle.css"
+import style from "../../component style/HeaderStyle.module.css"
 
 import { useDispatch } from "react-redux";
 import { comelist } from "../../redux/actions/ListAction";

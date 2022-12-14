@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "../component style/Allhome.css"
+import style from "../component style/Allhome.module.css"
 
 import Header from "./public components/Header";
 import Footer from "./public components/Footer";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "../../component style/HomeBox.css"
+import style from "../../component style/HomeBox.module.css"
 
 import SlideShow from "./SlideShow";
 import Getapp from "./Getapp";

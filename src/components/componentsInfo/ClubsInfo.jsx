@@ -1,5 +1,5 @@
 
-import style from "../../component style/clubInfostyle.css"
+import style from "../../component style/clubInfostyle.module.css"
 
 import star from "../../images/infoClub/star.png"
 import nostar from "../../images/infoClub/nostar.png"
