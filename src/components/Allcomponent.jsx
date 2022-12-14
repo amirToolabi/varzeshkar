@@ -1,5 +1,7 @@
 import React from "react";
 
+import style from "../component style/Allhome.css"
+
 import Header from "./public components/Header";
 import Footer from "./public components/Footer";
 import Home from "./home components/Home";
@@ -11,7 +13,7 @@ const Allcomponent = () => {
 
   return (
     <>
-      <div className={comelist? "allhome" : undefined}>
+      <div className={comelist? style.allhome : undefined}>
         <Header />
         <Home />
         <Footer />

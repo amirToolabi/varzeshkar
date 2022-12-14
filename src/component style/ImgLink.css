@@ -1,4 +1,4 @@
-.homecontainer .imglink {
+.imglink {
   width: 100%;
   margin-top: 40px;
   display: flex;
@@ -7,31 +7,26 @@
   justify-content: space-evenly;
 }
 
-.homecontainer .imglink a {
+.imglink a {
   width: 49%;
 }
 
-.homecontainer .imglink a img {
+.imglink a img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 1px 5px 1px #ccc;
 }
 
 @media screen and (max-width: 600px) {
-  .homecontainer .imglink {
+  .imglink {
     flex-direction: column;
   }
 
-  .homecontainer .imglink a {
+  .imglink a {
     width: 100%;
   }
 
   .homecontainer .imglink a img {
     border-radius: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .homecontainer .imglink a {
   }
 }

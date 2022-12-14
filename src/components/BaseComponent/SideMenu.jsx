@@ -1,5 +1,5 @@
 
-import"../../component style/SlideMenuStyle.css"
+import style from "../../component style/SlideMenuStyle.css"
 
 
 import aerobic from "../../images/lists/aerobic.e98cf0a.png";
@@ -22,8 +22,8 @@ import more from "../../images/lists/more.png";
 const SideMenu = () => {
     return (
         <>
-            <div className="scrollist">
-                <ul className="ul_game">
+            <div className={style.scrollist}>
+                <ul className={style.ul_game}>
                     <li>
                         <a href="#">
                             <img src={gameing} alt="" />
@@ -107,7 +107,7 @@ const SideMenu = () => {
                     </li>
                 </ul>
                 <hr />
-                <ul className="ul_soon">
+                <ul className={style.ul_soon}>
                     <li>
                         <a href="#">
                             <img src={desert} alt="" />

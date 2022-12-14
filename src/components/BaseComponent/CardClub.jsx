@@ -1,19 +1,21 @@
 import { Link } from "react-router-dom";
 
+import style from "../../component style/CardClub.css"
+
 const CardClub = ({ title, address, img, woman, man, location, doted, listItemOne, listItemTwo, listItemThree, reserve, price }) => {
     return (
-        <div className="child">
+        <div className={style.child}>
             <a href="">
                 <Link to="/club">
 
-                    <img className="imgslid" src={img} alt="" />
-                    <div className="middle">
+                    <img className={style.imgslid} src={img} alt="" />
+                    <div className={style.middle}>
                         <p>{title}</p>
-                        <div className="locationgyminfo">
-                            <span className="locationgym">
+                        <div className={style.locationgyminfo}>
+                            <span className={style.locationgym}>
                                 <img src={location} alt="" />{address}
                             </span>
-                            <span className="persons">
+                            <span className={style.persons}>
                                 {woman ? <img src={woman} alt="" /> : undefined}
                                 {man ? <img src={man} alt="" /> : undefined}
                             </span>
@@ -39,7 +41,7 @@ const CardClub = ({ title, address, img, woman, man, location, doted, listItemOn
                             }
                         </ul>
                     </div>
-                    <p className="reserved">{reserve} <strong>{price ? price : ""}</strong></p>
+                    <p className={style.reserved}>{reserve} <strong>{price ? price : ""}</strong></p>
                 </Link>
             </a>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../component style/FooterStyle.css"
+import style from "../../component style/FooterStyle.css"
 
 import insta from "../../images/instagram.png";
 import linkedin from "../../images/linkedin.png";
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="aboutlink">
+        <div className={style.aboutlink}>
           <div>
             <a href="">
               <img src={linkedin} alt="" />
@@ -31,7 +31,7 @@ const Footer = () => {
         </p>
         <hr />
         <p>2022 — دانش آوازه تندرست | ورزشکار</p>
-        <div className="risbuttons">
+        <div className={style.risbuttons}>
           <a href="#"><img src={home} alt="" /></a>
           <a href="#"><img src={location} alt="" /></a>
           <a href="#"><img src={info} alt="" /></a>

@@ -112,7 +112,6 @@
   border-left: 1px solid #f3f4f6;
   display: flex;
   align-items: center;
-  background-color: chartreuse;
 }
 
 .container
@@ -433,7 +432,7 @@
   object-fit: cover;
 }
 
-/* ---------------------------------------------------------------------------------- */
+
 
 .container .content .messagecontent {
   max-width: 100%;
@@ -444,72 +443,9 @@
   margin-top: 15px;
 }
 
-.container .content .messagecontent .message nav {
-  max-width: 100%;
-  text-align: right;
-}
 
-.container .content .messagecontent .message nav ul {
-  max-width: 100%;
-  display: flex;
-  justify-content: start;
-  padding: 0;
-}
+/* ---------------------------------------------------------------------------------- */
 
-.container .content .messagecontent .message nav ul li {
-  min-width: fit-content;
-  padding: 5px 20px;
-  color: #999;
-  font-size: 15px;
-  margin: 0 2px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.container .content .messagecontent .message nav ul li:nth-child(1) {
-  color: #dd2c00;
-  border-bottom: 2px solid #dd2c00;
-}
-
-.container .content .messagecontent .message nav ul li:hover {
-  background-color: #eff;
-}
-
-.container .content .messagecontent .message .firstmessage {
-  width: 96%;
-  min-height: fit-content;
-  padding: 13px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e4effa;
-  border-radius: 8px;
-  margin: 10px auto 0;
-}
-
-.container .content .messagecontent .message .firstmessage p {
-  color: #3f76d2;
-  font-size: 13px;
-}
-
-.container .content .messagecontent .message .firstmessage a {
-  color: #000;
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.container .content .messagecontent .message .firstmessage a:hover {
-  background-color: #d4ddff;
-}
-
-
-
-/* ------------------------------------------------------------------------------- */
 
 
 
@@ -580,12 +516,7 @@
     padding: 15px;
   }
 
-  .container .content .messagecontent .message .firstmessage {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+
 }
 
 @media screen and (max-width: 590px) {

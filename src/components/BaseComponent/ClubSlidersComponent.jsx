@@ -1,6 +1,6 @@
 
 
-import "../../component style/Papularstyle.css"
+import style from "../../component style/ClubSliderComponent.css"
 
 import Slider from "react-slick";
 
@@ -67,15 +67,15 @@ const ClubSlidersComponent = ({ clubItems, title, subtitle, setting = 4.5 }) => 
 
     return (
         <>
-            <div className="papular">
-                <div className="papulartitle">
+            <div className={style.papular}>
+                <div className={style.papulartitle}>
                     <h3>{title}</h3>
                     <div>
                         <p>{subtitle}</p>
                         <a href="">نمایش بیشتر</a>
                     </div>
                 </div>
-                <div className="papularslids">
+                <div className={style.papularslids}>
                     <Slider {...settings}>
                         {clubItems?.map((item) => <CardClub key={Math.random()} address={item.address} title={item.title} img={item.img} location={item.location} woman={item.woman} man={item.man} doted={item.doted} listItemOne={item.listItemOne} listItemTwo={item.listItemTwo} listItemThree={item.listItemThree} reserve={item.reserve} price={item.price} />)}
                     </Slider>

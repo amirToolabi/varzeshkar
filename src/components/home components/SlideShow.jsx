@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../component style/TopSliderStyle.css"
+import style from "../../component style/TopSliderStyle.css"
 
 // import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -16,7 +16,7 @@ const SlideShow = () => {
 
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -26,7 +26,7 @@ const SlideShow = () => {
 
   return (
     <>
-      <div className="slids">
+      <div className={style.slids}>
         <Slider {...settings}>
           <div>
             <a href="">

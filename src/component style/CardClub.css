@@ -1,0 +1,108 @@
+
+.child {
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 0 5px 0 5px;
+  min-height: 330px;
+  direction: rtl;
+  padding-bottom: 10px;
+}
+
+.child a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  outline: none !important;
+  border: none !important;
+}
+.child a .imgslid {
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.child a .middle {
+  padding: 0 5px;
+}
+
+.child a .middle p {
+  color: #6f7583;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 590;
+  padding: 0 7px;
+}
+
+.child a .middle .locationgyminfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7px;
+  margin: 10px 0;
+}
+
+.child a .middle .locationgyminfo .locationgym {
+  display: flex;
+  align-items: center;
+  color: #6f7583;
+  font-size: 14px;
+}
+
+.child a .middle .locationgyminfo .locationgym img {
+  width: 12px;
+  height: 13px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+.child a .middle .locationgyminfo .persons {
+  display: flex;
+}
+
+.child a .middle .locationgyminfo .persons img {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+  margin-bottom: 0px;
+}
+
+.child a .middle ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.child a .middle ul li {
+  color: #a0a5ae;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.child a .middle ul li img {
+  width: 14px;
+  height: 14px;
+  margin-bottom: -4px;
+}
+
+.child a .reserved {
+  width: 94%;
+  margin: 10px auto 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 9px;
+  color: #7b939e;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 450px) {
+  .child a .middle p {
+    font-size: 14px;
+  }
+
+  .child .middle ul li {
+    font-size: 11px;
+  }
+}

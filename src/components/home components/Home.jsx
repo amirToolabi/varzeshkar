@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../component style/HomeBox.css"
+import style from "../../component style/HomeBox.css"
 
 import SlideShow from "./SlideShow";
 import Getapp from "./Getapp";
@@ -153,17 +153,17 @@ const Home = () => {
 
   return (
     <>
-      <div className="homeandlist" id={comelist ? "stopscroll" : null}>
+      <div className={style.homeandlist} id={comelist ? style.stopscroll : null}>
         {/* ================ side bar ================= */}
-        <section className="lists" id="lists">
+        <section className={style.lists}>
           <SideMenu />
         </section>
         {comelist &&
-          <section className={comelist ? null : "golist"} id="liststwo">
+          <section className={comelist ? null : style.golist} id={style.liststwo}>
             <SideMenu />
           </section>}
         {/* ================ side bar ================= */}
-        <div className="homecontainer">
+        <div className={style.homecontainer}>
           <SlideShow />
           <ClubSlidersComponent clubItems={clubItems} title={"محبوب ترین ها"} subtitle={"باشگاه های محبوب تایید شده توسط ورزشکار"} />
           <ImgLink />

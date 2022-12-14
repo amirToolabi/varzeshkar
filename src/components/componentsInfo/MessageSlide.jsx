@@ -1,11 +1,15 @@
 
+import style from "../../component style/messageinfoclub.css"
+
 import user from "../../images/infoClub/user.png"
+
+
 
 
 const MessageSlide = () => {
     return ( 
         <>
-            <div className="message">
+            <div className={style.message}>
                 <nav>
                     <ul>
                         <li>لیست نظرات</li>
@@ -13,7 +17,7 @@ const MessageSlide = () => {
                         <li>تجهیزات</li>
                     </ul>
                 </nav>
-                <div className="firstmessage">
+                <div className={style.firstmessage}>
                     <p>اولین نفری باشید که برای این باشگاه نظر ثبت می کنید</p>
                     <a href="">جهت ثبت نظر ابتدا وارد شوید &nbsp;<img src={user} alt="" /></a>
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../component style/HeaderStyle.css"
+import style from "../../component style/HeaderStyle.css"
 
 import { useDispatch } from "react-redux";
 import { comelist } from "../../redux/actions/ListAction";
@@ -23,19 +23,19 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="contentheader">
-          <div className="items">
+        <div className={style.contentheader}>
+          <div className={style.items}>
             <button onClick = {()=> dispatch(comelist()) }>
               <img src={more} alt="" /> دسته بندی
             </button>
             <a href="#">
               <img src={logo} alt="" />
             </a>
-            <a href="#" className="fav">
+            <a href="#" className={style.fav}>
               <img src={fav} alt="" />
             </a>
           </div>
-          <div className="search">
+          <div className={style.search}>
             <form action="">
               <input type="text" placeholder="هرچی تو ذهنت هست جستجو کن" />
             </form>
@@ -44,8 +44,8 @@ const Header = () => {
               اطراف من
             </button>
           </div>
-          <div className="login">
-            <button className="btnform">
+          <div className={style.login}>
+            <button className={style.btnform}>
               <img src={mgglass} alt="" />
             </button>
             <a href="">

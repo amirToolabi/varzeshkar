@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../../component style/ShadowStyle.css"
+import style from "../../component style/ShadowStyle.css"
 
 
 import { useDispatch } from 'react-redux';
@@ -15,7 +15,7 @@ const Shadow = () => {
 
     return (
         <>
-            <div className="shadow" onClick={() => dispatch(golist())}>
+            <div className={style.shadow} onClick={() => dispatch(golist())}>
 
             </div>
         </>

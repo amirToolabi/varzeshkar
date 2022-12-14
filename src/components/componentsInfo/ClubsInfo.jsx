@@ -1,5 +1,5 @@
 
-import "../../component style/clubInfostyle.css"
+import style from "../../component style/clubInfostyle.css"
 
 import star from "../../images/infoClub/star.png"
 import nostar from "../../images/infoClub/nostar.png"
@@ -42,16 +42,16 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
 
     return (
         <>
-            <section className="container">
-                <div className="content">
+            <section className={style.container}>
+                <div className={style.content}>
 
-                    <div className="thisclub">
-                        <div className="infoclub">
-                            <div className="subclub">
-                                <div className="subclubimg">
+                    <div className={style.thisclub}>
+                        <div className={style.infoclub}>
+                            <div className={style.subclub}>
+                                <div className={style.subclubimg}>
                                     <img src={subimg} alt="" />
                                 </div>
-                                <div className="subclubname">
+                                <div className={style.subclubname}>
                                     <p>از سری زیرمجموعه های </p>
                                     <div>
                                         <h4>{subclub}</h4>
@@ -59,13 +59,13 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                                     </div>
                                 </div>
                             </div>
-                            <div className="club">
+                            <div className={style.club}>
                                 <h3>
                                     {clubname}
                                 </h3>
-                                <div className="star">
-                                    <div className="firststarchild">
-                                        <span className="imgstar">
+                                <div className={style.star}>
+                                    <div className={style.firststarchild}>
+                                        <span className={style.imgstar}>
                                             <img src={star} alt="" />
                                             <img src={star} alt="" />
                                             <img src={star} alt="" />
@@ -76,27 +76,27 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                                             ۴.۳ از ۵
                                         </span>
                                     </div>
-                                    <div className="secondstarchild">
+                                    <div className={style.secondstarchild}>
                                         {" ۰ "}&nbsp; دیدگاه کاربران 
                                     </div>
                                 </div>
-                                <div className="gender">
-                                    {man ? <span className="man"><img src={man} /></span> : undefined}
-                                    {woman ? <span className="woman"><img src={woman} /> {"بانوان"} </span> : undefined}
+                                <div className={style.gender}>
+                                    {man ? <span className={style.man}><img src={man} /></span> : undefined}
+                                    {woman ? <span className={style.woman}><img src={woman} /> {"بانوان"} </span> : undefined}
                                 </div>
-                                <div className="location">
-                                    <div className="city">
+                                <div className={style.location}>
+                                    <div className={style.city}>
                                         <span>استان : <strong>{state}</strong></span>
                                         <span>شهر : <strong>{city}</strong></span>
                                         <span>منطقه : <strong>{region}</strong></span>
                                     </div>
 
-                                    <div className="address">
+                                    <div className={style.address}>
                                         <p><span>آدرس : </span>{address}</p>
                                     </div>
                                     <button><img src={locationpng} /> موقعیت روی نقشه و مسیریابی </button>
                                 </div>
-                                <div className="services">
+                                <div className={style.services}>
                                     <span>خدمات قابل ارائه</span>
                                     <ul>
                                         {services?.map((item) => <li><img src={check} /> {" "} {item}</li>)}
@@ -104,7 +104,7 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                                 </div>
 
                             </div>
-                            <div className="appearance">
+                            <div className={style.appearance}>
                                 <div>
                                     <span><img src={wide} /> مساحت</span>
                                     <strong>{area}</strong>
@@ -118,27 +118,27 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                                     <strong>{year}</strong>
                                 </div>
                             </div>
-                            <div className="problem">
+                            <div className={style.problem}>
                                 <a href=""><img src={warning} alt="" /> گزارش نادرستی مشخصات</a>
                             </div>
                         </div>
 
 
-                        <div className="aboutclub">
+                        <div className={style.aboutclub}>
 
-                            <div className="imgtitle">
+                            <div className={style.imgtitle}>
                                 <img src={image} />
                             </div>
 
-                            <div className="discribtion">
+                            <div className={style.discribtion}>
                                 <h4>توضیحات تکمیلی</h4>
                                 <ul>
                                     {discribtion?.map((item) => <li>{item}</li>)}
                                 </ul>
-                                <strong className="phone">تلفن تماس {phone}</strong>
+                                <strong className={style.phone}>تلفن تماس {phone}</strong>
                             </div>
 
-                            <div className="possibilities">
+                            <div className={style.possibilities}>
                                 <strong>امکانات</strong>
                                 <ul>
                                     {possibilities?.map((item) => <li><img src={cheklist} /> {" "} {item}</li>)}
@@ -148,7 +148,7 @@ const ClubsInfo = ({ image, subimg, subclub, clubname, woman, man, state, city, 
                         </div>
                     </div>
 
-                    <div className="messagecontent">
+                    <div className={style.messagecontent}>
                         <MessageSlide/>
                     </div>
 
