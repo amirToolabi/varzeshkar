@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Yekan";
+  src: url(../myfont/Yekan/Yekan.ttf) format("ttf"),
+    url(../myfont/Yekan/Yekan.eot) format("eot"),
+    url(../myfont/Yekan/Yekan.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Yekan;
+}
+
+body {
+  direction: rtl;
+  background-color: #f3f4f6;
+  overflow-x: hidden;
+}
