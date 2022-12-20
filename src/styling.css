@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.thisiscolossal.com/wp-content/uploads/2018/11/HenriPrestes_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://pngimg.com/uploads/rain/rain_PNG13468.png");
+  animation: rain 0.19s ease-in infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 10 0;
+  }
+  100% {
+    background-position: 20% 80%;
+  }
+}
+
+.content form {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  width: 400px;
+  height: min-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 30px 15px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.content form h3 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.content form .formchild {
+  width: 100%;
+  height: min-content;
+  position: relative;
+  overflow-x: hidden;
+  margin: 10px 0;
+}
+
+.formchild input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+}
+.formchild label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.formchild label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid greenyellow;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.content-name {
+  position: absolute;
+  font-size: 14px;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.5s ease;
+  color: #ddd;
+}
+.formchild input:focus {
+  outline: none;
+}
+.formchild input:focus + .label-name .content-name,
+.formchild input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 13px;
+  left: 0px;
+  color: greenyellow;
+}
+.formchild input:focus + .label-name::after,
+.formchild input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+/* CSS */
+.btn {
+  --b: 2px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: rgb(0, 174, 255);
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 30px auto 0;
+  cursor: pointer;
+  width: 70%;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.btn:active {
+  background: var(--color);
+  color: #fff;
+}
