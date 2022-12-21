@@ -167,3 +167,9 @@
   background: var(--color);
   color: #fff;
 }
+
+
+.valid{
+  font-size: 14px;
+  color: orange;
+}

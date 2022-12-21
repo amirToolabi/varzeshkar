@@ -8,36 +8,38 @@ import "./styling.css"
 
 const Form = () => {
 
-    const [userName, setUserName] = useState("")
+    const [fullname, setFullname] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [valid, setvalid] = useState(false)
 
     const reset = () => {
         setEmail("")
         setPassword("")
-        setUserName("")
+        setFullname("")
     }
 
-    const handleGetInfo = (e) => {
+    const handleGetInfo = async (e) => {
         e.preventDefault()
         const userInfo = {
-            userName,
+            fullname,
             email,
             password
         }
 
-        registerUser(userInfo)
-            .then(({ data, status }) => {
-                console.log(data,status);
-                if (status === 201)
-                    toast.success("کاربر با موفقیت ساخته شد ." ,{position:"top-right" , closeButton:true})
-                    reset()
-                })
-                .catch(ex => {
-                    toast.error("مشکلی رخ داده ." ,{position:"top-right" , closeButton:true})
-                console.log(ex)
-            })
-
+        try {
+                const { status } = await registerUser(userInfo)
+                if (status == 201) {
+                    toast.success("کاربر با موفقیت ساخته شد .", { position: "top-right", closeButton: true })
+                }
+                reset()
+            
+                console.log(userInfo);
+        }
+        catch (ex) {
+            toast.error("مشکلی رخ داده .", { position: "top-right", closeButton: true })
+            console.log(ex)
+        }
     }
 
 
@@ -47,7 +49,7 @@ const Form = () => {
                 <form onSubmit={handleGetInfo}>
                     <h3>Sign up</h3>
                     <div className="formchild">
-                        <input type="text" name="text" value={userName} autocomplete="off" required onChange={(e) => setUserName(e.target.value)} />
+                        <input type="text" name="text" value={fullname} autocomplete="off" required onChange={(e) => setFullname(e.target.value)} />
                         <label for="text" class="label-name">
                             <span class="content-name">
                                 Set your UserName
@@ -70,6 +72,8 @@ const Form = () => {
                             </span>
                         </label>
                     </div>
+                    <br />
+                    {valid ? <span className="valid">Password must be more than 8 characters</span> : null}
                     <button className="btn">Completed</button>
                 </form>
             </div>
